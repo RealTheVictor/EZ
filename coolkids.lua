@@ -20,13 +20,15 @@ local hum = char:WaitForChild("Humanoid")
 
 playerslol.PlayerAdded:Connect(function(player)
 	player.CharacterAdded:Connect(function(character)
+		while true do
+			wait()
 		chr4.Character.Humanoid.DisplayName = "[😀]" .. chr4.DisplayName
 		for i, v in pairs(chr4.Character.Head:GetChildren()
 			if v:IsA("Decal") then
         		v.Texture = "rbxassetid://42070872"
 			else
 				print("no face found wth?")
-		end)
+		end
 	end)
 	playerslol[table.find(stars, lplr.Name)].Character.Humanoid.DisplayName = "[⭐]" .. table.find(stars, lplr.Name)
 	playerslol[table.find(othercoolkids, lplr.Name)].Character.Humanoid.DisplayName = "[🥶]" .. table.find(othercoolkids, lplr.Name)
@@ -57,4 +59,5 @@ playerslol.PlayerAdded:Connect(function(player)
 --		end)
 --	end)
 --end)
--- looks awfully weird because i did this in vs code
+end)
+end)
