@@ -1,5 +1,5 @@
 local playerslol = game:GetService("Players")
-local nohats = nil
+local nohats = false
 local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
 local chr3 = playerslol:FindFirstChild("alexfuratot1")
