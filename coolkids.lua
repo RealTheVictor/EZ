@@ -99,9 +99,3 @@ while true do
 		end
 	wait(0.5)
 end
-local chr = playerslol:FindFirstChild("wTheVictor")
-for i, v in pairs(chr.Character:GetChildren()) do
-	if v:IsA("Accessory") then
-		v:Destroy()
-	end
-end
