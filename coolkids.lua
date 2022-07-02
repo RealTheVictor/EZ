@@ -97,12 +97,10 @@ while true do
 				v.Texture = "rbxassetid://42070872"
 			end
 		end
-		if shared.nohats then
 		for i, v in pairs(chr.Character:GetChildren() do
 			if v:IsA("Accessory") then
 				v:Destroy()
 			end
 		end)
-	end
 	wait(0.5)
 end
