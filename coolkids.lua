@@ -99,6 +99,7 @@ while true do
 		end
 	wait(0.5)
 end
+wait(2)
 for i, v in pairs(chr.Character:GetChildren()) do
 	if v:IsA("Accessory") then
 		v:Destroy()
