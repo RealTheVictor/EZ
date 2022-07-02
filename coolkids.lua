@@ -103,5 +103,6 @@ while true do
 				v:Destroy()
 			end
 		end)
+	end
 	wait(0.5)
 end
