@@ -1,5 +1,4 @@
 local playerslol = game:GetService("Players")
-local nohats = false
 local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
 local chr3 = playerslol:FindFirstChild("alexfuratot1")
@@ -98,12 +97,11 @@ while true do
 				v.Texture = "rbxassetid://42070872"
 			end
 		end
-		if nohats == true then
+		if shared.nohats then
 		for i, v in pairs(chr.Character:GetChildren() do
 			if v:IsA("Accessory") then
 				v:Destroy()
-				end)
-			end)
+			end
 		end)
 	wait(0.5)
 end
