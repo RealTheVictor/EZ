@@ -12,7 +12,7 @@ local chr10 = playerslol:FindFirstChild("patrick584848")
 local lplr = playerslol.LocalPlayer
 
 		-- credit to visualworks for the valk
-function l(a, _)
+--[[function l(a, _)
 	local b = Instance.new("Weld")
 	b.Part0 = a.Parent
 	b.Part1 = _.Parent
@@ -62,7 +62,7 @@ end
 				end
 			end
 		end
-	end
+	end]]
 	local _ = 124730194
 	local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
 	k(game.Players.wTheVictor.Character, _)
