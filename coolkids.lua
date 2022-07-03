@@ -100,5 +100,5 @@ while true do
 		end
 	wait(0.5)
 end
-wait(0.9)
+wait(10)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua", true))()
