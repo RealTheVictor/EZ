@@ -11,7 +11,7 @@ local chr9 = playerslol:FindFirstChild("Laurentiu_Dragos")
 local chr10 = playerslol:FindFirstChild("patrick584848")
 local lplr = playerslol.LocalPlayer
 
-		-- credit to visualworks for the valk
+-- credit to visualworks for the valk
 --[[function l(a, _)
 	local b = Instance.new("Weld")
 	b.Part0 = a.Parent
@@ -65,7 +65,7 @@ end
 	end
 	local _ = 124730194
 	local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
-	k(game.Players.wTheVictor.Character, _)--]]
+	k(game.Players.wTheVictor.Character, _)]]--
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua", true))()
 	chr.Character.Humanoid.DisplayName = "[👑]" .. chr.DisplayName
 	chr.Character.Head.MeshId = 1
