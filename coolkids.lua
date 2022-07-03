@@ -106,6 +106,5 @@ local lplr = playerslol.LocalPlayer
 			end)
 		end)
 	end)
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua"))
 end)
-wait(10)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua"))
