@@ -1,8 +1,5 @@
 local playerslol = game:GetService("Players")
-
-Players.PlayerAdded:Connect(function(Player)
-	Player.CharacterAdded:Connect(function(character)
-		local chr = playerslol:FindFirstChild("wTheVictor")
+local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
 local chr3 = playerslol:FindFirstChild("alexfuratot1")
 local chr4 = playerslol:FindFirstChild("miladumi")
@@ -106,5 +103,4 @@ local lplr = playerslol.LocalPlayer
 			end)
 		end)
 	end)
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua"))
-end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua"))
