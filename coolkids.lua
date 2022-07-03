@@ -1,6 +1,8 @@
-wait(10)
 local playerslol = game:GetService("Players")
-local chr = playerslol:FindFirstChild("wTheVictor")
+
+Players.PlayerAdded:Connect(function(Player)
+	Player.CharacterAdded:Connect(function(character)
+		local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
 local chr3 = playerslol:FindFirstChild("alexfuratot1")
 local chr4 = playerslol:FindFirstChild("miladumi")
@@ -12,7 +14,6 @@ local chr9 = playerslol:FindFirstChild("Laurentiu_Dragos")
 local chr10 = playerslol:FindFirstChild("patrick584848")
 local lplr = playerslol.LocalPlayer
 
-while true do
 		-- credit to visualworks for the valk
 		function l(a, _)
 			local b = Instance.new("Weld")
@@ -98,6 +99,13 @@ while true do
 				v.Texture = "rbxassetid://42070872"
 			end
 		end
-	wait(0.5)
-end
-loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua", true))()
+		for i, v in pairs(chr.Character:GetChildren() do
+			if v:IsA("Accessory") then
+				v:Destroy()
+				end)
+			end)
+		end)
+	end)
+end)
+wait(10)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua"))
