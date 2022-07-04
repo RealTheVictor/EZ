@@ -1,3 +1,4 @@
+wait(10)
 local playerslol = game:GetService("Players")
 local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
