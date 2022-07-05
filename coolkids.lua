@@ -1,4 +1,7 @@
-wait(10)
+if not game:IsLoaded() then
+	game.Loaded:Wait()
+end
+
 local playerslol = game:GetService("Players")
 local chr = playerslol:FindFirstChild("wTheVictor")
 local chr2 = playerslol:FindFirstChild("davidgbr34")
