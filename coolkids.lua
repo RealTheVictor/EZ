@@ -1,4 +1,5 @@
--- it looks scuffed because it was made in vs code but it works so
+-- looks scuffed because vs code
+
 if not game:IsLoaded() then
 	game.Loaded:Wait()
 end
@@ -16,9 +17,8 @@ local chr9 = playerslol:FindFirstChild("Laurentiu_Dragos")
 local chr10 = playerslol:FindFirstChild("patrick584848")
 local lplr = playerslol.LocalPlayer
 
-chr.Chatted:Connect(function(Chat)
-	if Chat == "/e dance" then
-		local playerslol = game:GetService("Players")
+local function stuff()
+	local playerslol = game:GetService("Players")
     	local chr = playerslol:FindFirstChild("wTheVictor")
     	local chr2 = playerslol:FindFirstChild("davidgbr34")
     	local chr3 = playerslol:FindFirstChild("alexfuratot1")
@@ -117,5 +117,16 @@ chr.Chatted:Connect(function(Chat)
 			    v.Texture = "rbxassetid://42070872"
 		    end
 	    end
+end
+
+while true do
+	if chr or chr2 or chr3 or chr4 or chr5 or chr6 or chr7 or chr8 or chr9 or chr10 then
+		stuff()
+	end
+end
+
+chr.Chatted:Connect(function(Chat)
+	if Chat == "/e dance" then
+		stuff()
 	end
 end)
