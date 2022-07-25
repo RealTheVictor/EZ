@@ -88,7 +88,7 @@ local function stuff()
         k(game.Players.wTheVictor.Character, _)]]
         loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua", true))()
         chr.Character.Humanoid.DisplayName = "[👑]" .. chr.DisplayName
-        chr.Character.Head.MeshId = 1
+--        chr.Character.Head.MeshId = 1
         chr.Character.RightLowerLeg.MeshId = "902942093"
         chr.Character.RightLowerLeg.Transparency = "1"
         chr.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
