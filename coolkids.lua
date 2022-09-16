@@ -87,7 +87,6 @@ local function stuff()
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.wTheVictor.Character, _)
 	chr.Character.GoldCirclet:Destroy()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/RealTheVictor/EZ/main/nohats.lua", true))()
         chr.Character.Humanoid.DisplayName = "[👑]" .. chr.DisplayName
         chr.Character.Head.MeshId = 1
         chr.Character.RightLowerLeg.MeshId = "902942093"
