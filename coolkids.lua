@@ -32,7 +32,7 @@ local function stuff()
 		local lplr = playerslol.LocalPlayer
 
 -- credit to visualworks for the valk
-	function l(a, _)
+--[[	function l(a, _)
         local b = Instance.new("Weld")
         b.Part0 = a.Parent
         b.Part1 = _.Parent
@@ -86,7 +86,7 @@ local function stuff()
         local _ = 124730194
         local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
         k(game.Players.wTheVictor.Character, _)
-	chr.Character.GoldCirclet:Destroy()
+	chr.Character.GoldCirclet:Destroy()]]
         chr.Character.Humanoid.DisplayName = "[👑]" .. chr.DisplayName
         chr.Character.Head.MeshId = 1
         chr.Character.RightLowerLeg.MeshId = "902942093"
