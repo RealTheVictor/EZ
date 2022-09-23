@@ -125,7 +125,7 @@ while true do
 	end
 end
 
-chr.Chatted:Connect(function(Chat)
+game.Players.wTheVictor.Chatted:Connect(function(Chat)
 	if Chat == "/e dance" then
 		stuff()
 	end
