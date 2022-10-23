@@ -1,1582 +1,4202 @@
+if not game:IsLoaded() then
+
+
+	repeat wait()
+
+
+	until game:IsLoaded()
+
+
+end
+
+
+
 getgenv().ezstuff = {
+
+
 	['VM'] = false,
+
+
 	['VoicelinesM'] = {
-		11232813317, -- VoicelineM_1
+
+
+		11232813317, -- welcome matra to ez s (VoicelineM_1)
+
+
 		11232863794, -- VoicelineM_2
+
+
 		11232893991, -- VoicelineM_3
+
+
 		11232895388
+
+
 	} 
+
+
 }
 
--- ^^^^ does nothing for now
+
 
 -- Instances:
 
+
+
 local EZS = Instance.new("ScreenGui")
+
+
 local Frame = Instance.new("Frame")
+
+
 local Buttons = Instance.new("Frame")
+
+
 local UICorner = Instance.new("UICorner")
+
+
 local UIListLayout = Instance.new("UIListLayout")
+
+
 local FriendsButton = Instance.new("ImageButton")
+
+
 local UICorner_2 = Instance.new("UICorner")
+
+
 local HomeButton = Instance.new("ImageButton")
+
+
 local UICorner_3 = Instance.new("UICorner")
+
+
 local SettingsButton = Instance.new("ImageButton")
+
+
 local UICorner_4 = Instance.new("UICorner")
+
+
 local Menus = Instance.new("Frame")
+
+
 local Home = Instance.new("Frame")
+
+
 local UICorner_5 = Instance.new("UICorner")
+
+
 local AnimPack = Instance.new("Folder")
+
+
 local AnimPackImage = Instance.new("ImageLabel")
+
+
 local Button = Instance.new("ImageButton")
+
+
 local UICorner_6 = Instance.new("UICorner")
+
+
 local AnimPack_2 = Instance.new("TextLabel")
+
+
 local Headless = Instance.new("Folder")
+
+
 local Button_2 = Instance.new("ImageButton")
+
+
 local UICorner_7 = Instance.new("UICorner")
+
+
 local Headless_2 = Instance.new("TextLabel")
+
+
 local HeadlessImage = Instance.new("ImageLabel")
+
+
 local Korblox = Instance.new("Folder")
+
+
 local Button_3 = Instance.new("ImageButton")
+
+
 local UICorner_8 = Instance.new("UICorner")
+
+
 local Korblox_2 = Instance.new("TextLabel")
+
+
 local KorbloxImage = Instance.new("ImageLabel")
+
+
 local BlackValk = Instance.new("Folder")
+
+
 local Button_4 = Instance.new("ImageButton")
+
+
 local UICorner_9 = Instance.new("UICorner")
+
+
 local BlackValkImage = Instance.new("ImageLabel")
+
+
 local BlackValk_2 = Instance.new("TextLabel")
-local Trick = Instance.new("Folder")
-local Button_5 = Instance.new("ImageButton")
-local UICorner_10 = Instance.new("UICorner")
-local TrickImage = Instance.new("ImageLabel")
-local Trick_2 = Instance.new("TextLabel")
-local TheVictor = Instance.new("Folder")
-local Button_6 = Instance.new("ImageButton")
-local UICorner_11 = Instance.new("UICorner")
-local VictorImage = Instance.new("ImageLabel")
-local Victor = Instance.new("TextLabel")
+
+
 local Settings = Instance.new("Frame")
-local UICorner_12 = Instance.new("UICorner")
+
+
+local UICorner_10 = Instance.new("UICorner")
+
+
 local HeadlessToggle = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+
+
+local UICorner_11 = Instance.new("UICorner")
+
+
 local Frame_2 = Instance.new("Frame")
-local UICorner_14 = Instance.new("UICorner")
+
+
+local UICorner_12 = Instance.new("UICorner")
+
+
 local HeadlessLabel = Instance.new("TextLabel")
+
+
 local KorbloxLabel = Instance.new("TextLabel")
+
+
 local KorbloxToggle = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+
+
+local UICorner_13 = Instance.new("UICorner")
+
+
 local Frame_3 = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local UICorner_17 = Instance.new("UICorner")
+
+
+local UICorner_14 = Instance.new("UICorner")
+
+
+local VictorTrickToggle = Instance.new("TextButton")
+
+
+local UICorner_15 = Instance.new("UICorner")
+
+
 local Frame_4 = Instance.new("Frame")
-local UICorner_18 = Instance.new("UICorner")
+
+
+local UICorner_16 = Instance.new("UICorner")
+
+
+local VictorTrickLabel = Instance.new("TextLabel")
+
+
+local VictorTrickLabel_2 = Instance.new("TextLabel")
+
+
 local Friends = Instance.new("Frame")
-local UICorner_19 = Instance.new("UICorner")
+
+
+local UICorner_17 = Instance.new("UICorner")
+
+
 local UIObjects = Instance.new("Frame")
+
+
 local Template = Instance.new("Frame")
-local UICorner_20 = Instance.new("UICorner")
+
+
+local UICorner_18 = Instance.new("UICorner")
+
+
 local Username = Instance.new("TextLabel")
+
+
 local DisplayName = Instance.new("TextLabel")
+
+
 local JoinButton = Instance.new("TextButton")
-local UICorner_21 = Instance.new("UICorner")
+
+
+local UICorner_19 = Instance.new("UICorner")
+
+
 local Game = Instance.new("TextLabel")
+
+
 local ImageLabel = Instance.new("ImageLabel")
-local UICorner_22 = Instance.new("UICorner")
+
+
+local UICorner_20 = Instance.new("UICorner")
+
+
 local PlaceId = Instance.new("TextLabel")
+
+
 local GameId = Instance.new("TextLabel")
+
+
 local ScrollingFrame = Instance.new("ScrollingFrame")
-local UICorner_23 = Instance.new("UICorner")
+
+
+local UICorner_21 = Instance.new("UICorner")
+
+
 local UIListLayout_2 = Instance.new("UIListLayout")
+
+
 local TextButton = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+
+
+local UICorner_22 = Instance.new("UICorner")
+
+
 local ButtonHover = Instance.new("Frame")
-local UICorner_25 = Instance.new("UICorner")
+
+
+local UICorner_23 = Instance.new("UICorner")
+
+
 local TextLabel = Instance.new("TextLabel")
+
+
 local Time = Instance.new("Frame")
-local UICorner_26 = Instance.new("UICorner")
+
+
+local UICorner_24 = Instance.new("UICorner")
+
+
 local TextLabel_2 = Instance.new("TextLabel")
+
+
 local Animation = Instance.new("Frame")
+
+
 local Frame_5 = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
+
+
+local UICorner_25 = Instance.new("UICorner")
+
+
 local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+
+
 local TextLabel1 = Instance.new("TextLabel")
+
+
 local UIGradient = Instance.new("UIGradient")
+
+
 local TextLabel_3 = Instance.new("TextLabel")
+
+
 local UIGradient_2 = Instance.new("UIGradient")
+
+
 local UIStroke = Instance.new("UIStroke")
+
+
 local UIStroke_1 = Instance.new("UIStroke")
+
+
 
 --Properties:
 
+
+
 EZS.Name = "EZS"
+
+
 EZS.Parent = game.CoreGui
+
+
 EZS.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+
 EZS.DisplayOrder = 1
+
+
 EZS.ResetOnSpawn = false
 
+
+
 Frame.Parent = EZS
+
+
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Frame.BackgroundTransparency = 1.000
+
+
 Frame.Position = UDim2.new(3.9504954e-08, 0, 0, 0)
+
+
 Frame.Size = UDim2.new(1, 0, 1, 0)
-Frame.Visible = false
+
+
 Frame.ZIndex = 2000000032
 
+
+
 Buttons.Name = "Buttons"
+
+
 Buttons.Parent = Frame
+
+
 Buttons.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Buttons.BorderColor3 = Color3.fromRGB(27, 27, 27)
+
+
 Buttons.BorderSizePixel = 4
+
+
 Buttons.Position = UDim2.new(0.400000006, 0, 1.04235303, 0)
+
+
 Buttons.Size = UDim2.new(0.199352756, 0, 0.0729411766, 0)
+
+
 Buttons.ZIndex = 2000000032
 
+
+
 UICorner.CornerRadius = UDim.new(0, 19)
+
+
 UICorner.Parent = Buttons
 
+
+
 UIListLayout.Parent = Buttons
+
+
 UIListLayout.FillDirection = Enum.FillDirection.Horizontal
+
+
 UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+
+
 UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+
 UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+
 UIListLayout.Padding = UDim.new(0, 4)
 
+
+
 FriendsButton.Name = "FriendsButton"
+
+
 FriendsButton.Parent = Buttons
+
+
 FriendsButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 FriendsButton.BorderSizePixel = 0
+
+
 FriendsButton.ClipsDescendants = true
+
+
 FriendsButton.Position = UDim2.new(0.210793823, 0, 0, 0)
+
+
 FriendsButton.Size = UDim2.new(0.185064942, 0, 1, 0)
+
+
 FriendsButton.ZIndex = 2000000034
+
+
 FriendsButton.Image = "rbxasset://textures/ui/playerlist/FriendIcon@3x.png"
+
+
 FriendsButton.ScaleType = Enum.ScaleType.Fit
 
+
+
 UICorner_2.CornerRadius = UDim.new(0, 19)
+
+
 UICorner_2.Parent = FriendsButton
 
+
+
 HomeButton.Name = "HomeButton"
+
+
 HomeButton.Parent = Buttons
+
+
 HomeButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 HomeButton.BorderSizePixel = 0
+
+
 HomeButton.ClipsDescendants = true
+
+
 HomeButton.Position = UDim2.new(0.408294469, 0, 0, 0)
+
+
 HomeButton.Size = UDim2.new(0.185064942, 0, 1, 0)
+
+
 HomeButton.ZIndex = 2000000034
+
+
 HomeButton.Image = "rbxasset://textures/Icon_Stream_Off@3x.png"
+
+
 HomeButton.ScaleType = Enum.ScaleType.Fit
 
+
+
 UICorner_3.CornerRadius = UDim.new(0, 19)
+
+
 UICorner_3.Parent = HomeButton
 
+
+
 SettingsButton.Name = "SettingsButton"
+
+
 SettingsButton.Parent = Buttons
+
+
 SettingsButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 SettingsButton.BorderSizePixel = 0
+
+
 SettingsButton.ClipsDescendants = true
+
+
 SettingsButton.Position = UDim2.new(0.605795145, 0, 0, 0)
+
+
 SettingsButton.Size = UDim2.new(0.185064942, 0, 1, 0)
+
+
 SettingsButton.ZIndex = 2000000034
+
+
 SettingsButton.Image = "rbxasset://textures/ui/Settings/MenuBarIcons/GameSettingsTab@2x.png"
+
+
 SettingsButton.ScaleType = Enum.ScaleType.Fit
 
+
+
 UICorner_4.CornerRadius = UDim.new(0, 19)
+
+
 UICorner_4.Parent = SettingsButton
 
+
+
 Menus.Name = "Menus"
+
+
 Menus.Parent = Frame
+
+
 Menus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Menus.BackgroundTransparency = 1.000
+
+
 Menus.Size = UDim2.new(1, 0, 1, 0)
 
+
+
 Home.Name = "Home"
+
+
 Home.Parent = Menus
+
+
 Home.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Home.BorderSizePixel = 0
+
+
 Home.Position = UDim2.new(0.273647249, 0, 0.232588232, 0)
+
+
 Home.Size = UDim2.new(0.452872366, 0, 0.568235397, 0)
+
+
 Home.Visible = false
 
+
+
 UICorner_5.CornerRadius = UDim.new(0.0700000003, 0)
+
+
 UICorner_5.Parent = Home
 
+
+
 AnimPack.Name = "AnimPack"
+
+
 AnimPack.Parent = Home
 
+
+
 AnimPackImage.Name = "AnimPackImage"
+
+
 AnimPackImage.Parent = AnimPack
+
+
 AnimPackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 AnimPackImage.BackgroundTransparency = 1.000
+
+
 AnimPackImage.Position = UDim2.new(0.0357302204, 0, 0.0641821846, 0)
+
+
 AnimPackImage.Size = UDim2.new(0.0743188635, 0, 0.103519648, 0)
+
+
 AnimPackImage.Image = "rbxasset://textures/ui/Emotes/EmotesIcon@3x.png"
+
+
 AnimPackImage.ScaleType = Enum.ScaleType.Fit
 
+
+
 Button.Name = "Button"
+
+
 Button.Parent = AnimPack
+
+
 Button.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+
+
 Button.BackgroundTransparency = 1.000
+
+
 Button.BorderColor3 = Color3.fromRGB(26, 26, 26)
+
+
 Button.Position = UDim2.new(0.459406078, 0, 0.0662526041, 0)
+
+
 Button.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
+
+
 Button.ZIndex = 6
+
+
 Button.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
 
+
+
 UICorner_6.CornerRadius = UDim.new(0, 9)
+
+
 UICorner_6.Parent = Button
 
+
+
 AnimPack_2.Name = "AnimPack"
+
+
 AnimPack_2.Parent = AnimPack
+
+
 AnimPack_2.Active = true
+
+
 AnimPack_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 AnimPack_2.BackgroundTransparency = 1.000
+
+
 AnimPack_2.Position = UDim2.new(0.125770286, 0, 0.0712346137, 0)
+
+
 AnimPack_2.Selectable = true
+
+
 AnimPack_2.Size = UDim2.new(0.334076703, 0, 0.0894147828, 0)
+
+
 AnimPack_2.Font = Enum.Font.SourceSans
+
+
 AnimPack_2.Text = "Animation Pack"
+
+
 AnimPack_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 AnimPack_2.TextScaled = true
+
+
 AnimPack_2.TextSize = 14.000
+
+
 AnimPack_2.TextWrapped = true
 
+
+
 Headless.Name = "Headless"
+
+
 Headless.Parent = Home
 
+
+
 Button_2.Name = "Button"
+
+
 Button_2.Parent = Headless
+
+
 Button_2.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+
+
 Button_2.BackgroundTransparency = 1.000
+
+
 Button_2.BorderColor3 = Color3.fromRGB(26, 26, 26)
+
+
 Button_2.Position = UDim2.new(0.315055996, 0, 0.186335385, 0)
+
+
 Button_2.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
+
+
 Button_2.ZIndex = 6
+
+
 Button_2.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
 
+
+
 UICorner_7.CornerRadius = UDim.new(0, 9)
+
+
 UICorner_7.Parent = Button_2
 
+
+
 Headless_2.Name = "Headless"
+
+
 Headless_2.Parent = Headless
+
+
 Headless_2.Active = true
+
+
 Headless_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Headless_2.BackgroundTransparency = 1.000
+
+
 Headless_2.Position = UDim2.new(0.121482655, 0, 0.185106233, 0)
+
+
 Headless_2.Selectable = true
+
+
 Headless_2.Size = UDim2.new(0.194014117, 0, 0.0894147828, 0)
+
+
 Headless_2.Font = Enum.Font.SourceSans
+
+
 Headless_2.Text = "Headless"
+
+
 Headless_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Headless_2.TextScaled = true
+
+
 Headless_2.TextSize = 14.000
+
+
 Headless_2.TextWrapped = true
+
+
 Headless_2.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 HeadlessImage.Name = "HeadlessImage"
+
+
 HeadlessImage.Parent = Headless
+
+
 HeadlessImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 HeadlessImage.BackgroundTransparency = 1.000
+
+
 HeadlessImage.Position = UDim2.new(0.0354113616, 0, 0.190956518, 0)
+
+
 HeadlessImage.Size = UDim2.new(0, 45, 0, 43)
+
+
 HeadlessImage.ZIndex = 6
+
+
 HeadlessImage.Image = "http://www.roblox.com/asset/?id=10292846756"
+
+
 HeadlessImage.ScaleType = Enum.ScaleType.Fit
 
+
+
 Korblox.Name = "Korblox"
+
+
 Korblox.Parent = Home
 
+
+
 Button_3.Name = "Button"
+
+
 Button_3.Parent = Korblox
+
+
 Button_3.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+
+
 Button_3.BackgroundTransparency = 1.000
+
+
 Button_3.BorderColor3 = Color3.fromRGB(26, 26, 26)
+
+
 Button_3.Position = UDim2.new(0.289330214, 0, 0.316770136, 0)
+
+
 Button_3.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
+
+
 Button_3.ZIndex = 6
+
+
 Button_3.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
 
+
+
 UICorner_8.CornerRadius = UDim.new(0, 9)
+
+
 UICorner_8.Parent = Button_3
 
+
+
 Korblox_2.Name = "Korblox"
+
+
 Korblox_2.Parent = Korblox
+
+
 Korblox_2.Active = true
+
+
 Korblox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Korblox_2.BackgroundTransparency = 1.000
+
+
 Korblox_2.Position = UDim2.new(0.121482663, 0, 0.31554094, 0)
+
+
 Korblox_2.Selectable = true
+
+
 Korblox_2.Size = UDim2.new(0.168288365, 0, 0.0894147828, 0)
+
+
 Korblox_2.Font = Enum.Font.SourceSans
+
+
 Korblox_2.Text = "Korblox"
+
+
 Korblox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Korblox_2.TextScaled = true
+
+
 Korblox_2.TextSize = 14.000
+
+
 Korblox_2.TextWrapped = true
+
+
 Korblox_2.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 KorbloxImage.Name = "KorbloxImage"
+
+
 KorbloxImage.Parent = Korblox
+
+
 KorbloxImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 KorbloxImage.BackgroundTransparency = 1.000
+
+
 KorbloxImage.Position = UDim2.new(0.0354113616, 0, 0.321391255, 0)
+
+
 KorbloxImage.Size = UDim2.new(0, 45, 0, 43)
+
+
 KorbloxImage.ZIndex = 6
+
+
 KorbloxImage.Image = "http://www.roblox.com/asset/?id=9828069191"
+
+
 KorbloxImage.ScaleType = Enum.ScaleType.Fit
 
+
+
 BlackValk.Name = "BlackValk"
+
+
 BlackValk.Parent = Home
 
+
+
 Button_4.Name = "Button"
+
+
 Button_4.Parent = BlackValk
+
+
 Button_4.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
+
+
 Button_4.BackgroundTransparency = 1.000
+
+
 Button_4.BorderColor3 = Color3.fromRGB(26, 26, 26)
+
+
 Button_4.Position = UDim2.new(0.289330214, 0, 0.451345682, 0)
+
+
 Button_4.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
+
+
 Button_4.ZIndex = 6
+
+
 Button_4.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
 
+
+
 UICorner_9.CornerRadius = UDim.new(0, 9)
+
+
 UICorner_9.Parent = Button_4
 
+
+
 BlackValkImage.Name = "BlackValkImage"
+
+
 BlackValkImage.Parent = BlackValk
+
+
 BlackValkImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 BlackValkImage.BackgroundTransparency = 1.000
+
+
 BlackValkImage.Position = UDim2.new(0.0354113616, 0, 0.4559668, 0)
+
+
 BlackValkImage.Size = UDim2.new(0, 45, 0, 43)
+
+
 BlackValkImage.ZIndex = 6
+
+
 BlackValkImage.Image = "http://www.roblox.com/asset/?id=10176159240"
+
+
 BlackValkImage.ScaleType = Enum.ScaleType.Fit
 
+
+
 BlackValk_2.Name = "BlackValk"
+
+
 BlackValk_2.Parent = BlackValk
+
+
 BlackValk_2.Active = true
+
+
 BlackValk_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 BlackValk_2.BackgroundTransparency = 1.000
+
+
 BlackValk_2.Position = UDim2.new(0.121482663, 0, 0.450116485, 0)
+
+
 BlackValk_2.Selectable = true
+
+
 BlackValk_2.Size = UDim2.new(0.168288365, 0, 0.0894147828, 0)
+
+
 BlackValk_2.Font = Enum.Font.SourceSans
+
+
 BlackValk_2.Text = "Black Valk"
+
+
 BlackValk_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 BlackValk_2.TextScaled = true
+
+
 BlackValk_2.TextSize = 14.000
+
+
 BlackValk_2.TextWrapped = true
+
+
 BlackValk_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Trick.Name = "Trick"
-Trick.Parent = Home
 
-Button_5.Name = "Button"
-Button_5.Parent = Trick
-Button_5.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-Button_5.BackgroundTransparency = 1.000
-Button_5.BorderColor3 = Color3.fromRGB(26, 26, 26)
-Button_5.Position = UDim2.new(0.326489657, 0, 0.579710066, 0)
-Button_5.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
-Button_5.Visible = false
-Button_5.ZIndex = 6
-Button_5.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
-
-UICorner_10.CornerRadius = UDim.new(0, 9)
-UICorner_10.Parent = Button_5
-
-TrickImage.Name = "TrickImage"
-TrickImage.Parent = Trick
-TrickImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TrickImage.BackgroundTransparency = 1.000
-TrickImage.Position = UDim2.new(0.0357302204, 0, 0.577639639, 0)
-TrickImage.Size = UDim2.new(0.0743188635, 0, 0.103519648, 0)
-TrickImage.Visible = false
-TrickImage.ScaleType = Enum.ScaleType.Fit
-
-Trick_2.Name = "Trick"
-Trick_2.Parent = Trick
-Trick_2.Active = true
-Trick_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Trick_2.BackgroundTransparency = 1.000
-Trick_2.Position = UDim2.new(0.125770241, 0, 0.58469218, 0)
-Trick_2.Selectable = true
-Trick_2.Size = UDim2.new(0.201160267, 0, 0.0894147828, 0)
-Trick_2.Visible = false
-Trick_2.Font = Enum.Font.SourceSans
-Trick_2.Text = "ItIs_Trick"
-Trick_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Trick_2.TextScaled = true
-Trick_2.TextSize = 14.000
-Trick_2.TextWrapped = true
-Trick_2.TextXAlignment = Enum.TextXAlignment.Left
-
-TheVictor.Name = "TheVictor"
-TheVictor.Parent = Home
-
-Button_6.Name = "Button"
-Button_6.Parent = TheVictor
-Button_6.BackgroundColor3 = Color3.fromRGB(70, 70, 70)
-Button_6.BackgroundTransparency = 1.000
-Button_6.BorderColor3 = Color3.fromRGB(26, 26, 26)
-Button_6.Position = UDim2.new(0.326489657, 0, 0.579710066, 0)
-Button_6.Size = UDim2.new(0.0675181597, 0, 0.097308442, 0)
-Button_6.Visible = false
-Button_6.ZIndex = 6
-Button_6.Image = "rbxasset://textures/ui/VirtualCursor/cursorArrow@3x.png"
-
-UICorner_11.CornerRadius = UDim.new(0, 9)
-UICorner_11.Parent = Button_6
-
-VictorImage.Name = "VictorImage"
-VictorImage.Parent = TheVictor
-VictorImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VictorImage.BackgroundTransparency = 1.000
-VictorImage.Position = UDim2.new(0.0357302204, 0, 0.577639639, 0)
-VictorImage.Size = UDim2.new(0.0743188635, 0, 0.103519648, 0)
-VictorImage.Visible = false
-VictorImage.ScaleType = Enum.ScaleType.Fit
-
-Victor.Name = "Victor"
-Victor.Parent = TheVictor
-Victor.Active = true
-Victor.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Victor.BackgroundTransparency = 1.000
-Victor.Position = UDim2.new(0.125770241, 0, 0.58469218, 0)
-Victor.Selectable = true
-Victor.Size = UDim2.new(0.201160267, 0, 0.0894147828, 0)
-Victor.Visible = false
-Victor.Font = Enum.Font.SourceSans
-Victor.Text = "wTheVictor"
-Victor.TextColor3 = Color3.fromRGB(255, 255, 255)
-Victor.TextScaled = true
-Victor.TextSize = 14.000
-Victor.TextWrapped = true
-Victor.TextXAlignment = Enum.TextXAlignment.Left
 
 Settings.Name = "Settings"
+
+
 Settings.Parent = Menus
+
+
 Settings.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Settings.BorderSizePixel = 0
+
+
 Settings.Position = UDim2.new(0.273625046, 0, 0.232146651, 0)
+
+
 Settings.Size = UDim2.new(0.452872366, 0, 0.568235397, 0)
+
+
 Settings.Visible = false
 
-UICorner_12.CornerRadius = UDim.new(0.0700000003, 0)
-UICorner_12.Parent = Settings
+
+
+UICorner_10.CornerRadius = UDim.new(0.0700000003, 0)
+
+
+UICorner_10.Parent = Settings
+
+
 
 HeadlessToggle.Name = "HeadlessToggle"
+
+
 HeadlessToggle.Parent = Settings
+
+
 HeadlessToggle.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+
+
 HeadlessToggle.Position = UDim2.new(0.335505784, 0, 0.072463721, 0)
+
+
 HeadlessToggle.Size = UDim2.new(0.0812864378, 0, 0.0478452109, 0)
+
+
 HeadlessToggle.Font = Enum.Font.SourceSans
+
+
 HeadlessToggle.Text = ""
+
+
 HeadlessToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
 HeadlessToggle.TextSize = 14.000
 
-UICorner_13.CornerRadius = UDim.new(5, 8)
-UICorner_13.Parent = HeadlessToggle
+
+
+UICorner_11.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_11.Parent = HeadlessToggle
+
+
 
 Frame_2.Parent = HeadlessToggle
+
+
 Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Frame_2.Position = UDim2.new(0.0700000003, 0, 0.125, 0)
+
+
 Frame_2.Size = UDim2.new(0.263285905, 0, 0.718000293, 0)
 
-UICorner_14.CornerRadius = UDim.new(5, 8)
-UICorner_14.Parent = Frame_2
+
+
+UICorner_12.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_12.Parent = Frame_2
+
+
 
 HeadlessLabel.Name = "HeadlessLabel"
+
+
 HeadlessLabel.Parent = Settings
+
+
 HeadlessLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 HeadlessLabel.BackgroundTransparency = 1.000
+
+
 HeadlessLabel.Position = UDim2.new(0.0328717604, 0, 0.0579709746, 0)
+
+
 HeadlessLabel.Size = UDim2.new(0.285841763, 0, 0.0786749348, 0)
+
+
 HeadlessLabel.Font = Enum.Font.SourceSans
+
+
 HeadlessLabel.Text = "Headless Toggle"
+
+
 HeadlessLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 HeadlessLabel.TextScaled = true
+
+
 HeadlessLabel.TextSize = 14.000
+
+
 HeadlessLabel.TextWrapped = true
+
+
 HeadlessLabel.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 KorbloxLabel.Name = "KorbloxLabel"
+
+
 KorbloxLabel.Parent = Settings
+
+
 KorbloxLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 KorbloxLabel.BackgroundTransparency = 1.000
+
+
 KorbloxLabel.Position = UDim2.new(0.0328717604, 0, 0.149068266, 0)
+
+
 KorbloxLabel.Size = UDim2.new(0.285841763, 0, 0.0786749348, 0)
+
+
 KorbloxLabel.Font = Enum.Font.SourceSans
+
+
 KorbloxLabel.Text = "Korblox Toggle"
+
+
 KorbloxLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 KorbloxLabel.TextScaled = true
+
+
 KorbloxLabel.TextSize = 14.000
+
+
 KorbloxLabel.TextWrapped = true
+
+
 KorbloxLabel.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 KorbloxToggle.Name = "KorbloxToggle"
+
+
 KorbloxToggle.Parent = Settings
+
+
 KorbloxToggle.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+
+
 KorbloxToggle.Position = UDim2.new(0.335505784, 0, 0.162882417, 0)
+
+
 KorbloxToggle.Size = UDim2.new(0.0812864378, 0, 0.0478452109, 0)
+
+
 KorbloxToggle.Font = Enum.Font.SourceSans
+
+
 KorbloxToggle.Text = ""
+
+
 KorbloxToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
 KorbloxToggle.TextSize = 14.000
 
-UICorner_15.CornerRadius = UDim.new(5, 8)
-UICorner_15.Parent = KorbloxToggle
+
+
+UICorner_13.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_13.Parent = KorbloxToggle
+
+
 
 Frame_3.Parent = KorbloxToggle
+
+
 Frame_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Frame_3.Position = UDim2.new(0.0700000003, 0, 0.125, 0)
+
+
 Frame_3.Size = UDim2.new(0.263285905, 0, 0.718000293, 0)
 
-UICorner_16.CornerRadius = UDim.new(5, 8)
-UICorner_16.Parent = Frame_3
 
-UICorner_17.CornerRadius = UDim.new(5, 8)
-UICorner_17.Parent = VictorToggle
 
-Frame_4.Parent = VictorToggle
+UICorner_14.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_14.Parent = Frame_3
+
+
+
+VictorTrickToggle.Name = "VictorTrickToggle"
+
+
+VictorTrickToggle.Parent = Settings
+
+
+VictorTrickToggle.BackgroundColor3 = Color3.fromRGB(200, 200, 200)
+
+
+VictorTrickToggle.Position = UDim2.new(0.236441538, 0, 0.260643274, 0)
+
+
+VictorTrickToggle.Size = UDim2.new(0.0812864378, 0, 0.0478452109, 0)
+
+
+VictorTrickToggle.Font = Enum.Font.SourceSans
+
+
+VictorTrickToggle.Text = ""
+
+
+VictorTrickToggle.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
+VictorTrickToggle.TextSize = 14.000
+
+
+
+UICorner_15.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_15.Parent = VictorTrickToggle
+
+
+
+Frame_4.Parent = VictorTrickToggle
+
+
 Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Frame_4.Position = UDim2.new(0.0700000003, 0, 0.125, 0)
+
+
 Frame_4.Size = UDim2.new(0.263285905, 0, 0.718000293, 0)
 
-UICorner_18.CornerRadius = UDim.new(5, 8)
-UICorner_18.Parent = Frame_4
+
+
+UICorner_16.CornerRadius = UDim.new(5, 8)
+
+
+UICorner_16.Parent = Frame_4
+
+
+
+VictorTrickLabel.Name = "VictorTrickLabel"
+
+
+VictorTrickLabel.Parent = Settings
+
+
+VictorTrickLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+VictorTrickLabel.BackgroundTransparency = 1.000
+
+
+VictorTrickLabel.Position = UDim2.new(0.0328717455, 0, 0.246376738, 0)
+
+
+VictorTrickLabel.Size = UDim2.new(0.196827486, 0, 0.0786749348, 0)
+
+
+VictorTrickLabel.Font = Enum.Font.SourceSans
+
+
+VictorTrickLabel.Text = "VT Toggle"
+
+
+VictorTrickLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+VictorTrickLabel.TextScaled = true
+
+
+VictorTrickLabel.TextSize = 14.000
+
+
+VictorTrickLabel.TextWrapped = true
+
+
+VictorTrickLabel.TextXAlignment = Enum.TextXAlignment.Left
+
+
+
+VictorTrickLabel_2.Name = "VictorTrickLabel"
+
+
+VictorTrickLabel_2.Parent = Settings
+
+
+VictorTrickLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
+VictorTrickLabel_2.BackgroundTransparency = 1.000
+
+
+VictorTrickLabel_2.Position = UDim2.new(0.0314360745, 0, 0.308488518, 0)
+
+
+VictorTrickLabel_2.Size = UDim2.new(0.196827486, 0, 0.0501341783, 0)
+
+
+VictorTrickLabel_2.Font = Enum.Font.SourceSans
+
+
+VictorTrickLabel_2.Text = "(use if victor and trick are ingame)"
+
+
+VictorTrickLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
+VictorTrickLabel_2.TextScaled = true
+
+
+VictorTrickLabel_2.TextSize = 14.000
+
+
+VictorTrickLabel_2.TextWrapped = true
+
+
+VictorTrickLabel_2.TextXAlignment = Enum.TextXAlignment.Left
+
+
 
 Friends.Name = "Friends"
+
+
 Friends.Parent = Menus
+
+
 Friends.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Friends.BorderSizePixel = 0
+
+
 Friends.Position = UDim2.new(0.273647249, 0, 0.237294108, 0)
+
+
 Friends.Size = UDim2.new(0.452872366, 0, 0.568235397, 0)
+
+
 Friends.Visible = false
 
-UICorner_19.CornerRadius = UDim.new(0.0700000003, 0)
-UICorner_19.Parent = Friends
+
+
+UICorner_17.CornerRadius = UDim.new(0.0700000003, 0)
+
+
+UICorner_17.Parent = Friends
+
+
 
 UIObjects.Name = "UIObjects"
+
+
 UIObjects.Parent = Friends
+
+
 UIObjects.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 UIObjects.Size = UDim2.new(0, 100, 0, 100)
+
+
 UIObjects.Visible = false
 
+
+
 Template.Name = "Template"
+
+
 Template.Parent = UIObjects
+
+
 Template.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+
+
 Template.Position = UDim2.new(0.000491498387, 0, 0, 0)
+
+
 Template.Size = UDim2.new(1.00194526, 0, 0.26260668, 0)
 
-UICorner_20.CornerRadius = UDim.new(0.289999992, 0)
-UICorner_20.Parent = Template
+
+
+UICorner_18.CornerRadius = UDim.new(0.289999992, 0)
+
+
+UICorner_18.Parent = Template
+
+
 
 Username.Name = "Username"
+
+
 Username.Parent = Template
+
+
 Username.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Username.BackgroundTransparency = 1.000
+
+
 Username.Position = UDim2.new(0.155937046, 0, 0.495726764, 0)
+
+
 Username.Size = UDim2.new(0.28101185, 0, 0.389348209, 0)
+
+
 Username.Font = Enum.Font.SourceSans
+
+
 Username.Text = "@Username"
+
+
 Username.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Username.TextScaled = true
+
+
 Username.TextSize = 14.000
+
+
 Username.TextWrapped = true
+
+
 Username.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 DisplayName.Name = "DisplayName"
+
+
 DisplayName.Parent = Template
+
+
 DisplayName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 DisplayName.BackgroundTransparency = 1.000
+
+
 DisplayName.Position = UDim2.new(0.155937135, 0, 0.102564231, 0)
+
+
 DisplayName.Size = UDim2.new(0.323483437, 0, 0.470330954, 0)
+
+
 DisplayName.Font = Enum.Font.SourceSans
+
+
 DisplayName.Text = "DisplayName"
+
+
 DisplayName.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 DisplayName.TextScaled = true
+
+
 DisplayName.TextSize = 14.000
+
+
 DisplayName.TextWrapped = true
+
+
 DisplayName.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 JoinButton.Name = "JoinButton"
+
+
 JoinButton.Parent = Template
+
+
 JoinButton.BackgroundColor3 = Color3.fromRGB(16, 16, 16)
+
+
 JoinButton.Position = UDim2.new(0.744227469, 0, 0.547254264, 0)
+
+
 JoinButton.Size = UDim2.new(0.240035728, 0, 0.350181639, 0)
+
+
 JoinButton.Font = Enum.Font.SourceSans
+
+
 JoinButton.Text = "JOIN"
+
+
 JoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 JoinButton.TextScaled = true
+
+
 JoinButton.TextSize = 14.000
+
+
 JoinButton.TextWrapped = true
 
-UICorner_21.CornerRadius = UDim.new(0.289999992, 0)
-UICorner_21.Parent = JoinButton
+
+
+UICorner_19.CornerRadius = UDim.new(0.289999992, 0)
+
+
+UICorner_19.Parent = JoinButton
+
+
 
 Game.Name = "Game"
+
+
 Game.Parent = Template
+
+
 Game.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Game.BackgroundTransparency = 1.000
+
+
 Game.Position = UDim2.new(0.492131591, 0, 0.188034192, 0)
+
+
 Game.Size = UDim2.new(0.47496441, 0, 0.290598303, 0)
+
+
 Game.Font = Enum.Font.SourceSans
+
+
 Game.Text = "N/A"
+
+
 Game.TextColor3 = Color3.fromRGB(0, 255, 8)
+
+
 Game.TextScaled = true
+
+
 Game.TextSize = 14.000
+
+
 Game.TextWrapped = true
+
+
 Game.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 ImageLabel.Parent = Template
+
+
 ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 ImageLabel.Position = UDim2.new(0.00715307612, 0, 0.0854702145, 0)
+
+
 ImageLabel.Size = UDim2.new(0.137339056, 0, 0.820512712, 0)
+
+
 ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+
 ImageLabel.ScaleType = Enum.ScaleType.Fit
 
-UICorner_22.CornerRadius = UDim.new(1, 0)
-UICorner_22.Parent = ImageLabel
+
+
+UICorner_20.CornerRadius = UDim.new(1, 0)
+
+
+UICorner_20.Parent = ImageLabel
+
+
 
 PlaceId.Name = "PlaceId"
+
+
 PlaceId.Parent = Template
+
+
 PlaceId.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 PlaceId.Size = UDim2.new(0, 200, 0, 50)
+
+
 PlaceId.Visible = false
+
+
 PlaceId.Font = Enum.Font.SourceSans
+
+
 PlaceId.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
 PlaceId.TextSize = 14.000
 
+
+
 GameId.Name = "GameId"
+
+
 GameId.Parent = Template
+
+
 GameId.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 GameId.Size = UDim2.new(0, 200, 0, 50)
+
+
 GameId.Visible = false
+
+
 GameId.Font = Enum.Font.SourceSans
+
+
 GameId.TextColor3 = Color3.fromRGB(0, 0, 0)
+
+
 GameId.TextSize = 14.000
 
+
+
 ScrollingFrame.Parent = Friends
+
+
 ScrollingFrame.Active = true
+
+
 ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 ScrollingFrame.BackgroundTransparency = 1.000
+
+
 ScrollingFrame.Position = UDim2.new(0.0114336703, 0, 0.0289854705, 0)
+
+
 ScrollingFrame.Size = UDim2.new(0.976149559, 0, 0.92753619, 0)
+
+
 ScrollingFrame.CanvasSize = UDim2.new(0, 0, 0, 0)
 
-UICorner_23.CornerRadius = UDim.new(0.0700000003, 0)
-UICorner_23.Parent = ScrollingFrame
+
+
+UICorner_21.CornerRadius = UDim.new(0.0700000003, 0)
+
+
+UICorner_21.Parent = ScrollingFrame
+
+
 
 UIListLayout_2.Parent = ScrollingFrame
+
+
 UIListLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
 
+
+
 TextButton.Parent = Friends
+
+
 TextButton.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 TextButton.Position = UDim2.new(-2.23517418e-08, 0, -0.122153208, 0)
+
+
 TextButton.Size = UDim2.new(0, 200, 0, 50)
+
+
 TextButton.Font = Enum.Font.SourceSans
+
+
 TextButton.Text = "Refresh"
+
+
 TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextButton.TextScaled = true
+
+
 TextButton.TextSize = 14.000
+
+
 TextButton.TextWrapped = true
 
-UICorner_24.CornerRadius = UDim.new(0.289999992, 0)
-UICorner_24.Parent = TextButton
+
+
+UICorner_22.CornerRadius = UDim.new(0.289999992, 0)
+
+
+UICorner_22.Parent = TextButton
+
+
 
 ButtonHover.Name = "ButtonHover"
+
+
 ButtonHover.Parent = Frame
+
+
 ButtonHover.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 ButtonHover.BorderColor3 = Color3.fromRGB(27, 27, 27)
+
+
 ButtonHover.BorderSizePixel = 4
+
+
 ButtonHover.Position = UDim2.new(0.428414255, 0, 0.817331493, 0)
+
+
 ButtonHover.Size = UDim2.new(0.143000007, 0, 0.0540000014, 0)
+
+
 ButtonHover.Visible = false
+
+
 ButtonHover.ZIndex = 2000000032
 
-UICorner_25.CornerRadius = UDim.new(0, 19)
-UICorner_25.Parent = ButtonHover
+
+
+UICorner_23.CornerRadius = UDim.new(0, 19)
+
+
+UICorner_23.Parent = ButtonHover
+
+
 
 TextLabel.Parent = ButtonHover
+
+
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel.BackgroundTransparency = 1.000
+
+
 TextLabel.Position = UDim2.new(0.121212006, 0, 0.0363637209, 0)
+
+
 TextLabel.Size = UDim2.new(0.756340623, 0, 0.891304493, 0)
+
+
 TextLabel.ZIndex = 2000000033
+
+
 TextLabel.Font = Enum.Font.SourceSans
+
+
 TextLabel.Text = "N/A"
+
+
 TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel.TextScaled = true
+
+
 TextLabel.TextSize = 14.000
+
+
 TextLabel.TextWrapped = true
 
+
+
 Time.Name = "Time"
+
+
 Time.Parent = Frame
+
+
 Time.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Time.BorderColor3 = Color3.fromRGB(27, 27, 27)
+
+
 Time.BorderSizePixel = 4
+
+
 Time.Position = UDim2.new(0.441747576, 0, 1, 0)
+
+
 Time.Size = UDim2.new(0.117334694, 0, 0.0729411766, 0)
+
+
 Time.ZIndex = 2000000031
 
-UICorner_26.CornerRadius = UDim.new(0, 19)
-UICorner_26.Parent = Time
+
+
+UICorner_24.CornerRadius = UDim.new(0, 19)
+
+
+UICorner_24.Parent = Time
+
+
 
 TextLabel_2.Parent = Time
+
+
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_2.BackgroundTransparency = 1.000
+
+
 TextLabel_2.Position = UDim2.new(0.137906611, 0, 0, 0)
+
+
 TextLabel_2.Size = UDim2.new(0.706081808, 0, 0.709677398, 0)
+
+
 TextLabel_2.Font = Enum.Font.SourceSans
+
+
 TextLabel_2.Text = "00:00"
+
+
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_2.TextScaled = true
+
+
 TextLabel_2.TextSize = 14.000
+
+
 TextLabel_2.TextWrapped = true
 
+
+
 Animation.Name = "Animation"
+
+
 Animation.Parent = EZS
+
+
 Animation.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 Animation.BackgroundTransparency = 1.000
+
+
 Animation.Size = UDim2.new(1, 0, 1, 0)
 
+
+
 Frame_5.Parent = Animation
+
+
 Frame_5.BackgroundColor3 = Color3.fromRGB(31, 31, 31)
+
+
 Frame_5.BackgroundTransparency = 1.000
+
+
 Frame_5.Position = UDim2.new(0.5, 0, 0.5, 0)
 
-UICorner_27.CornerRadius = UDim.new(0, 999)
-UICorner_27.Parent = Frame_5
+
+
+UICorner_25.CornerRadius = UDim.new(0, 999)
+
+
+UICorner_25.Parent = Frame_5
+
+
 
 UIAspectRatioConstraint.Parent = Frame_5
+
+
 UIAspectRatioConstraint.AspectRatio = 1.017
 
+
+
 TextLabel1.Name = "TextLabel1"
+
+
 TextLabel1.Parent = Frame_5
+
+
 TextLabel1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel1.BackgroundTransparency = 1.000
+
+
 TextLabel1.Position = UDim2.new(0.117217094, 0, 0.177012756, 0)
+
+
 TextLabel1.Size = UDim2.new(0.53816098, 0, 0.644584596, 0)
+
+
 TextLabel1.Font = Enum.Font.SourceSans
+
+
 TextLabel1.Text = "E.Z."
+
+
 TextLabel1.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel1.TextScaled = true
+
+
 TextLabel1.TextSize = 14.000
+
+
 TextLabel1.TextWrapped = true
+
+
 TextLabel1.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(201, 6, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(1, 47, 255))}
+
+
 UIGradient.Offset = Vector2.new(0.0500000007, 0.100000001)
+
+
 UIGradient.Rotation = 100
+
+
 UIGradient.Parent = TextLabel1
 
+
+
 UIStroke.Name = "UIStroke"
+
+
 UIStroke.ApplyStrokeMode = "Contextual"
+
+
 UIStroke.Color = Color3.fromRGB(0,0,0)
+
+
 UIStroke.LineJoinMode = "Round"
+
+
 UIStroke.Thickness = 2.5
+
+
 UIStroke.Transparency = 0
+
+
 UIStroke.Parent = TextLabel1
 
+
+
 TextLabel_3.Parent = Frame_5
+
+
 TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_3.BackgroundTransparency = 1.000
+
+
 TextLabel_3.Position = UDim2.new(0.705727875, 0, 0.331999987, 0)
+
+
 TextLabel_3.Size = UDim2.new(0.176149726, 0, 0.363957167, 0)
+
+
 TextLabel_3.Font = Enum.Font.SourceSans
+
+
 TextLabel_3.Text = "S"
+
+
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+
 TextLabel_3.TextScaled = true
+
+
 TextLabel_3.TextSize = 14.000
+
+
 TextLabel_3.TextWrapped = true
+
+
 TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
 
+
+
 UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 166, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 140))}
+
+
 UIGradient_2.Offset = Vector2.new(0, 0.100000001)
+
+
 UIGradient_2.Rotation = 100
+
+
 UIGradient_2.Parent = TextLabel_3
 
+
+
 UIStroke_1.Name = "UIStroke"
+
+
 UIStroke_1.ApplyStrokeMode = "Contextual"
+
+
 UIStroke_1.Color = Color3.fromRGB(0,0,0)
+
+
 UIStroke_1.LineJoinMode = "Round"
+
+
 UIStroke_1.Thickness = 2.5
+
+
 UIStroke_1.Transparency = 0
+
+
 UIStroke_1.Parent = TextLabel_3
+
+
 
 -- Scripts:
 
-local function LXZSSGL_fake_script() -- FriendsButton.LocalScript 
+
+
+local function UVVYZZ_fake_script() -- FriendsButton.LocalScript 
+
+
 	local script = Instance.new('LocalScript', FriendsButton)
 
+
+
 	local on = false
+
+
 	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		if on == false then
+
+
 			on = true
+
+
 			script.Parent.Parent.Parent.Menus.Friends.Visible = true
+
+
 			script.Parent.Parent.Parent.Menus.Home.Visible = false
+
+
 			script.Parent.Parent.Parent.Menus.Settings.Visible = false
+
+
 		else
+
+
 			if on == true then
+
+
 				on = false
+
+
 				script.Parent.Parent.Parent.Menus.Friends.Visible = false
+
+
 			end
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseEnter:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0, 66,0, 71),
+
+
 			Enum.EasingDirection.Out,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		wait(0.1)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = true
+
+
 		script.Parent.Parent.Parent.ButtonHover:FindFirstChild("TextLabel").Text = "Friends"
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseLeave:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0.185, 0,1, 0),
+
+
 			Enum.EasingDirection.In,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = false
+
+
 	end)
+
+
 end
-coroutine.wrap(LXZSSGL_fake_script)()
-local function ARTEBC_fake_script() -- HomeButton.LocalScript 
+
+
+coroutine.wrap(UVVYZZ_fake_script)()
+
+
+local function RJRXAU_fake_script() -- HomeButton.LocalScript 
+
+
 	local script = Instance.new('LocalScript', HomeButton)
 
+
+
 	local on = false
+
+
 	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		if on == false then
+
+
 			on = true
+
+
 			script.Parent.Parent.Parent.Menus.Home.Visible = true
+
+
 			script.Parent.Parent.Parent.Menus.Friends.Visible = false
+
+
 			script.Parent.Parent.Parent.Menus.Settings.Visible = false
+
+
 		elseif on == true then
+
+
 			on = false
+
+
 			script.Parent.Parent.Parent.Menus.Home.Visible = false
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseEnter:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0, 66,0, 71),
+
+
 			Enum.EasingDirection.Out,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		wait(0.1)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = true
+
+
 		script.Parent.Parent.Parent.ButtonHover:FindFirstChild("TextLabel").Text = "Home"
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseLeave:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0.185, 0,1, 0),
+
+
 			Enum.EasingDirection.In,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = false
+
+
 	end)
+
+
 end
-coroutine.wrap(ARTEBC_fake_script)()
-local function OEWLR_fake_script() -- SettingsButton.LocalScript 
+
+
+coroutine.wrap(RJRXAU_fake_script)()
+
+
+local function LPYTR_fake_script() -- SettingsButton.LocalScript 
+
+
 	local script = Instance.new('LocalScript', SettingsButton)
 
+
+
 	local on = false
+
+
 	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		if on == false then
+
+
 			on = true
+
+
 			script.Parent.Parent.Parent.Menus.Settings.Visible = true
+
+
 			script.Parent.Parent.Parent.Menus.Home.Visible = false
+
+
 			script.Parent.Parent.Parent.Menus.Friends.Visible = false
+
+
 		elseif on == true then
+
+
 			on = false
+
+
 			script.Parent.Parent.Parent.Menus.Settings.Visible = false
+
+
 		end
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseEnter:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0, 66,0, 71),
+
+
 			Enum.EasingDirection.Out,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		wait(0.1)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = true
+
+
 		script.Parent.Parent.Parent.ButtonHover:FindFirstChild("TextLabel").Text = "Settings"
+
+
 	end)
+
+
 	
+
+
 	script.Parent.MouseLeave:Connect(function()
+
+
 		script.Parent:TweenSize(
+
+
 			UDim2.new(0.185, 0,1, 0),
+
+
 			Enum.EasingDirection.In,
+
+
 			Enum.EasingStyle.Sine,
+
+
 			0.1,
+
+
 			true
+
+
 		)
+
+
 		script.Parent.Parent.Parent.ButtonHover.Visible = false
+
+
 	end)
+
+
 end
-coroutine.wrap(OEWLR_fake_script)()
-local function JCIUG_fake_script() -- Button.LocalScript 
+
+
+coroutine.wrap(LPYTR_fake_script)()
+
+
+local function YZNI_fake_script() -- Button.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Button)
 
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 			repeat
+
+
 				wait()
+
+
 			until game:IsLoaded() and game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lean") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Lean:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lay") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Lay:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance1") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Dance1:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance2") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Dance2:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Greet") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Greet:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Chest Pump") then
+
+
 				game.ReplicatedStorage.ClientAnimations["Chest Pump"]:Destroy()
+
+
 			end
+
+
 	
+
+
 			if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Praying") then
+
+
 				game.ReplicatedStorage.ClientAnimations.Praying:Destroy()
+
+
 			end
+
+
 	
+
+
 			local Animations = game.ReplicatedStorage.ClientAnimations
+
+
 	
+
+
 			local LeanAnimation = Instance.new("Animation", Animations)
+
+
 			LeanAnimation.Name = "Lean"
+
+
 			LeanAnimation.AnimationId = "rbxassetid://3152375249"
+
+
 	
+
+
 			local LayAnimation = Instance.new("Animation", Animations)
+
+
 			LayAnimation.Name = "Lay"
+
+
 			LayAnimation.AnimationId = "rbxassetid://3152378852"
+
+
 	
+
+
 			local Dance1Animation = Instance.new("Animation", Animations)
+
+
 			Dance1Animation.Name = "Dance1"
+
+
 			Dance1Animation.AnimationId = "rbxassetid://3189773368"
+
+
 	
+
+
 			local Dance2Animation = Instance.new("Animation", Animations)
+
+
 			Dance2Animation.Name = "Dance2"
+
+
 			Dance2Animation.AnimationId = "rbxassetid://3189776546"
+
+
 	
+
+
 			local GreetAnimation = Instance.new("Animation", Animations)
+
+
 			GreetAnimation.Name = "Greet"
+
+
 			GreetAnimation.AnimationId = "rbxassetid://3189777795"
+
+
 	
+
+
 			local ChestPumpAnimation = Instance.new("Animation", Animations)
+
+
 			ChestPumpAnimation.Name = "Chest Pump"
+
+
 			ChestPumpAnimation.AnimationId = "rbxassetid://3189779152"
+
+
 	
+
+
 			local PrayingAnimation = Instance.new("Animation", Animations)
+
+
 			PrayingAnimation.Name = "Praying"
+
+
 			PrayingAnimation.AnimationId = "rbxassetid://3487719500"
+
+
 	
+
+
 			function AnimationPack(Character)
+
+
 				Character:WaitForChild'Humanoid'
+
+
 				repeat
+
+
 					wait()
+
+
 				until game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+
+
 	
+
+
 				local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
+
+
 				local ScrollingFrame = AnimationPack.ScrollingFrame
+
+
 				local CloseButton = AnimationPack.CloseButton
+
+
 	
+
+
 				local Lean = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LeanAnimation)
+
+
 	
+
+
 				local Lay = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(LayAnimation)
+
+
 	
+
+
 				local Dance1 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance1Animation)
+
+
 	
+
+
 				local Dance2 = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(Dance2Animation)
+
+
 	
+
+
 				local Greet = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(GreetAnimation)
+
+
 	
+
+
 				local ChestPump = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(ChestPumpAnimation)
+
+
 	
+
+
 				local Praying = game:GetService("Players").LocalPlayer.Character.Humanoid:LoadAnimation(PrayingAnimation)
+
+
 	
+
+
 				AnimationPack.Visible = true
+
+
 	
+
+
 				AnimationPack.ScrollingFrame.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Lean" then
+
+
 							v.Name = "LeanButton"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Lay" then
+
+
 							v.Name = "LayButton"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Dance1" then
+
+
 							v.Name = "Dance1Button"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Dance2" then
+
+
 							v.Name = "Dance2Button"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Greet" then
+
+
 							v.Name = "GreetButton"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Chest Pump" then
+
+
 							v.Name = "ChestPumpButton"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				for i,v in pairs(ScrollingFrame:GetChildren()) do
+
+
 					if v.Name == "TextButton" then
+
+
 						if v.Text == "Praying" then
+
+
 							v.Name = "PrayingButton"
+
+
 						end
+
+
 					end
+
+
 				end
+
+
 	
+
+
 				function Stop()
+
+
 					Lean:Stop()
+
+
 					Lay:Stop()
+
+
 					Dance1:Stop()
+
+
 					Dance2:Stop()
+
+
 					Greet:Stop()
+
+
 					ChestPump:Stop()
+
+
 					Praying:Stop()
+
+
 				end
+
+
 	
+
+
 				local LeanTextButton = ScrollingFrame.LeanButton
+
+
 				local LayTextButton = ScrollingFrame.LayButton
+
+
 				local Dance1TextButton = ScrollingFrame.Dance1Button
+
+
 				local Dance2TextButton = ScrollingFrame.Dance2Button
+
+
 				local GreetTextButton = ScrollingFrame.GreetButton
+
+
 				local ChestPumpTextButton = ScrollingFrame.ChestPumpButton
+
+
 				local PrayingTextButton = ScrollingFrame.PrayingButton
+
+
 	
+
+
 				AnimationPack.MouseButton1Click:Connect(function()
+
+
 					if ScrollingFrame.Visible == false then
+
+
 						ScrollingFrame.Visible = true
+
+
 						CloseButton.Visible = true
+
+
 					end
+
+
 				end)
+
+
 				CloseButton.MouseButton1Click:Connect(function()
+
+
 					if ScrollingFrame.Visible == true then
+
+
 						ScrollingFrame.Visible = false
+
+
 						CloseButton.Visible = false
+
+
 					end
+
+
 				end)
+
+
 				LeanTextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Lean:Play()
+
+
 				end)
+
+
 				LayTextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Lay:Play()
+
+
 				end)
+
+
 				Dance1TextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Dance1:Play()
+
+
 				end)
+
+
 				Dance2TextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Dance2:Play()
+
+
 				end)
+
+
 				GreetTextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Greet:Play()
+
+
 				end)
+
+
 				ChestPumpTextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					ChestPump:Play()
+
+
 				end)
+
+
 				PrayingTextButton.MouseButton1Click:Connect(function()
+
+
 					Stop()
+
+
 					Praying:Play()
+
+
 				end)
+
+
 	
+
+
 				game:GetService("Players").LocalPlayer.Character.Humanoid.Running:Connect(function()
+
+
 					Stop()
+
+
 				end)
+
+
 	
+
+
 				game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function()
+
+
 					Stop()
+
+
 				end)
+
+
 			end
+
+
 			AnimationPack(game.Players.LocalPlayer.Character)
+
+
 			game.Players.LocalPlayer.CharacterAdded:Connect(AnimationPack)
+
+
 	end)
+
+
 end
-coroutine.wrap(JCIUG_fake_script)()
-local function CIYLYT_fake_script() -- Button_2.LocalScript 
+
+
+coroutine.wrap(YZNI_fake_script)()
+
+
+local function HXELBF_fake_script() -- Button_2.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Button_2)
 
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		game:GetService("Players").LocalPlayer.Character.Head.MeshId = 1
+
+
 	end)
+
+
 end
-coroutine.wrap(CIYLYT_fake_script)()
-local function BCYYIZU_fake_script() -- Button_3.LocalScript 
+
+
+coroutine.wrap(HXELBF_fake_script)()
+
+
+local function OMRJJ_fake_script() -- Button_3.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Button_3)
 
+
+
 	local lp = game:GetService("Players").LocalPlayer
+
+
 	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		lp.Character.RightLowerLeg.MeshId = "902942093"
+
+
 		lp.Character.RightLowerLeg.Transparency = "1"
+
+
 		lp.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+
+
 		lp.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+
+
 		lp.Character.RightFoot.MeshId = "902942089"
+
+
 	end)
+
+
 end
-coroutine.wrap(BCYYIZU_fake_script)()
-local function UQUVW_fake_script() -- Button_4.LocalScript 
+
+
+coroutine.wrap(OMRJJ_fake_script)()
+
+
+local function FUEWV_fake_script() -- Button_4.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Button_4)
 
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		function l(a, _)
+
+
 			local b = Instance.new("Weld")
+
+
 			b.Part0 = a.Parent
+
+
 			b.Part1 = _.Parent
+
+
 			b.C0 = a.CFrame
+
+
 			b.C1 = _.CFrame
+
+
 			b.Parent = a.Parent
+
+
 			return b
+
+
 		end
+
+
 		local function b(c, d, b, _, a, e)
+
+
 			local f = Instance.new("Weld")
+
+
 			f.Name = c
+
+
 			f.Part0 = b
+
+
 			f.Part1 = _
+
+
 			f.C0 = a
+
+
 			f.C1 = e
+
+
 			f.Parent = d
+
+
 			return f
+
+
 		end
+
+
 		local function a(_, b)
+
+
 			for _, _ in pairs(_:GetChildren()) do
+
+
 				if _:IsA("Attachment") and _.Name == b then
+
+
 					return _
+
+
 				elseif not _:IsA("Accoutrement") and not _:IsA("Tool") then
+
+
 					local _ = a(_, b)
+
+
 					if _ then
+
+
 						return _
+
+
 					end
+
+
 				end
+
+
 			end
+
+
 		end
+
+
 		function k(_, e)
+
+
 			e.Parent = _
+
+
 			local d = e:FindFirstChild("Handle")
+
+
 			if d then
+
+
 				local c = d:FindFirstChildOfClass("Attachment")
+
+
 				if c then
+
+
 					local _ = a(_, c.Name)
+
+
 					if _ then
+
+
 						l(_, c)
+
+
 					end
+
+
 				else
+
+
 					local c = chr.Character:FindFirstChild("Head")
+
+
 					if c then
+
+
 						local _ = CFrame.new(0, 0.5, 0)
+
+
 						local a = e.AttachmentPoint
+
+
 						b("HeadWeld", c, c, d, _, a)
+
+
 					end
+
+
 				end
+
+
 			end
+
+
 		end
+
+
 		local _ = 124730194
+
+
 		local _ = game:GetObjects("rbxassetid://" .. tostring(_))[1]
+
+
 		k(game.Players.LocalPlayer.Character, _)
+
+
 	end)
-end
-coroutine.wrap(UQUVW_fake_script)()
-local function MTAO_fake_script() -- Button_5.LocalScript 
-	local script = Instance.new('LocalScript', Button_5)
 
-	local players = game:GetService("Players")
-	local victor = players:GetNameFromUserIdAsync(1581179193)
-	local trick = players:GetNameFromUserIdAsync(3368671867)
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if trick.Character:FindFirstChild("Head") then
-			trick.Character.Head.MeshId = 1
-			trick.Character.Humanoid.DisplayName = "[👑]" .. victor.DisplayName
-		end
-		if victor.Character:FindFirstChild("Head") and trick.Character:FindFirstChild("Head") then
-			trick.Character.Head.MeshId = 1
-			trick.Character.Humanoid.DisplayName = "[👑]" .. trick.DisplayName
-			victor.Character.Humanoid.DisplayName = "[👑]" .. victor.DisplayName
-			victor.Character.Head.MeshId = 1
-			victor.Character.RightLowerLeg.MeshId = "902942093"
-			victor.Character.RightLowerLeg.Transparency = "1"
-			victor.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-			victor.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-			victor.Character.RightFoot.MeshId = "902942089"
-		end
-	end)
-end
-coroutine.wrap(MTAO_fake_script)()
-local function AYWGZS_fake_script() -- TrickImage.LocalScript 
-	local script = Instance.new('LocalScript', TrickImage)
 
-	local frame = script.Parent
-	local thumbType = Enum.ThumbnailType.AvatarBust
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local content, isReady = game.Players:GetUserThumbnailAsync(3368671867, thumbType, thumbSize)
-	
-	frame.Image = content
 end
-coroutine.wrap(AYWGZS_fake_script)()
-local function CWXMI_fake_script() -- Trick.LocalScript 
-	local script = Instance.new('LocalScript', Trick)
 
-	if game:GetService("Players").LocalPlayer.UserId == 3368671867 then
-		script.Parent.Button.Visible = true
-		script.Parent.TrickImage.Visible = true
-		script.Parent.Trick.Visible = true
-	end
-end
-coroutine.wrap(CWXMI_fake_script)()
-local function IUIPSH_fake_script() -- Button_6.LocalScript 
-	local script = Instance.new('LocalScript', Button_6)
 
-	local players = game:GetService("Players")
-	local victor = players:GetNameFromUserIdAsync(1581179193)
-	local trick = players:GetNameFromUserIdAsync(3368671867)
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		if victor.Character:FindFirstChild("Head") then
-			victor.Character.Head.MeshId = 1
-			victor.Character.Humanoid.DisplayName = "[👑]" .. victor.DisplayName
-			victor.Character.RightLowerLeg.MeshId = "902942093"
-			victor.Character.RightLowerLeg.Transparency = "1"
-			victor.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-			victor.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-			victor.Character.RightFoot.MeshId = "902942089"
-		end
-		if victor.Character:FindFirstChild("Head") and trick.Character:FindFirstChild("Head") then
-			trick.Character.Head.MeshId = 1
-			victor.Character.Humanoid.DisplayName = "[👑]" .. trick.DisplayName
-			victor.Character.Humanoid.DisplayName = "[👑]" .. victor.DisplayName
-			victor.Character.Head.MeshId = 1
-			victor.Character.RightLowerLeg.MeshId = "902942093"
-			victor.Character.RightLowerLeg.Transparency = "1"
-			victor.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-			victor.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-			victor.Character.RightFoot.MeshId = "902942089"
-		end
-	end)
-end
-coroutine.wrap(IUIPSH_fake_script)()
-local function XCPKQHY_fake_script() -- VictorImage.LocalScript 
-	local script = Instance.new('LocalScript', VictorImage)
+coroutine.wrap(FUEWV_fake_script)()
 
-	local frame = script.Parent
-	local thumbType = Enum.ThumbnailType.AvatarBust
-	local thumbSize = Enum.ThumbnailSize.Size420x420
-	local content, isReady = game.Players:GetUserThumbnailAsync(1581179193, thumbType, thumbSize)
-	
-	frame.Image = content
-end
-coroutine.wrap(XCPKQHY_fake_script)()
-local function XKORM_fake_script() -- TheVictor.LocalScript 
-	local script = Instance.new('LocalScript', TheVictor)
 
-	if game:GetService("Players").LocalPlayer.UserId == 1581179193 then
-		script.Parent.Button.Visible = true
-		script.Parent.VictorImage.Visible = true
-		script.Parent.Victor.Visible = true
-	end
-end
-coroutine.wrap(XKORM_fake_script)()
-local function CDBJVS_fake_script() -- Friends.LocalScript 
+local function IXSF_fake_script() -- Friends.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Friends)
 
+
+
 	local tps = game:GetService("TeleportService")
+
+
 	local lp = game:GetService("Players").LocalPlayer
+
+
 	local friends = lp:GetFriendsOnline()
+
+
 	local template = script.Parent.UIObjects.Template
+
+
 	
+
+
 	for i, v in pairs(friends) do
+
+
 		local newframe = template:Clone()
+
+
 		if v.LastLocation == "Website" then
+
+
 			newframe:Destroy()
+
+
 		else
+
+
 			newframe.Username.Text = v.UserName
+
+
 			newframe.DisplayName.Text = v.DisplayName
+
+
 			newframe.ImageLabel.Image = "https://roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username="..v.UserName
+
+
 			newframe.PlaceId.Text = v.GameId
+
+
 			newframe.Parent = script.Parent.ScrollingFrame
+
+
 			if v.LastLocation then
+
+
 				newframe.Game.Text = v.LastLocation
+
+
 				newframe.GameId.Text = v.GameId
+
+
 				newframe.JoinButton.MouseButton1Click:Connect(function()
+
+
 					tps:TeleportToPlaceInstance(v.PlaceId, v.GameId, lp)
+
+
 				end)
+
+
 			end
+
+
 		end
+
+
 	end
+
+
 end
-coroutine.wrap(CDBJVS_fake_script)()
-local function DBFBIS_fake_script() -- TextButton.LocalScript 
+
+
+coroutine.wrap(IXSF_fake_script)()
+
+
+local function LIJQGCK_fake_script() -- TextButton.LocalScript 
+
+
 	local script = Instance.new('LocalScript', TextButton)
 
+
+
 	local tps = game:GetService("TeleportService")
+
+
 	local lp = game:GetService("Players").LocalPlayer
+
+
 	local friends = lp:GetFriendsOnline()
+
+
 	local template = script.Parent.Parent.UIObjects.Template
+
+
 	
+
+
 	script.Parent.MouseButton1Click:Connect(function()
+
+
 		for i, v in pairs(script.Parent.Parent.ScrollingFrame:GetChildren()) do
+
+
 			if v.Name == "Template" then
+
+
 				v:Destroy()
+
+
 			end
+
+
 		end
+
+
 		for i, p in pairs(friends) do
+
+
 			local newframe = template:Clone()
+
+
 			if p.LastLocation == "Website" then
+
+
 				newframe:Destroy()
+
+
 			else
+
+
 				newframe.Username.Text = p.UserName
+
+
 				newframe.DisplayName.Text = p.DisplayName
+
+
 				newframe.ImageLabel.Image = "https://roblox.com/Thumbs/Avatar.ashx?x=150&y=150&Format=Png&username="..p.UserName
+
+
 				newframe.PlaceId.Text = p.GameId
+
+
 				newframe.Parent = script.Parent.Parent.ScrollingFrame
+
+
 				if p.LastLocation then
+
+
 					newframe.Game.Text = p.LastLocation
+
+
 					newframe.GameId.Text = p.GameId
+
+
 					newframe.JoinButton.MouseButton1Click:Connect(function()
+
+
 						tps:TeleportToPlaceInstance(p.PlaceId, p.GameId, lp)
+
+
 					end)
+
+
 				end
+
+
 			end
+
+
 		end
+
+
 	end)
+
+
 end
-coroutine.wrap(DBFBIS_fake_script)()
-local function TQUM_fake_script() -- TextLabel_2.LocalScript 
+
+
+coroutine.wrap(LIJQGCK_fake_script)()
+
+
+local function HABTP_fake_script() -- TextLabel_2.LocalScript 
+
+
 	local script = Instance.new('LocalScript', TextLabel_2)
 
+
+
 	while true do
+
+
 		script.Parent.Text = os.date("%I:%M %p")
+
+
 		wait()
+
+
 	end
+
+
 end
-coroutine.wrap(TQUM_fake_script)()
-local function XPEL_fake_script() -- EZS.LocalScript 
+
+
+coroutine.wrap(HABTP_fake_script)()
+
+
+local function WZRADBK_fake_script() -- EZS.LocalScript 
+
+
 	local script = Instance.new('LocalScript', EZS)
 
+
+
 	repeat wait()
+
+
 	until not script.Parent:FindFirstChild("Animation")
+
+
 	
+
+
 	local bluron = true
+
+
 	local uis = game:GetService("UserInputService")
+
+
 	local on = false
+
+
 	local Blur = game:GetService("Lighting"):WaitForChild("Blur")
+
+
 	
+
+
 	Blur.Size = 0
+
+
 	
+
+
 	uis.InputBegan:Connect(function(input, gameProcessed)
+
+
 		if input.KeyCode == Enum.KeyCode.P and on == false then
+
+
 			if bluron == true then
+
+
 				for i = 1,20 do
+
+
 					Blur.Size += 1
+
+
 					wait(0.01)
+
+
 				end
+
+
 				script.Parent.Frame.Visible = true
+
+
 				script.Parent.Frame.Buttons:TweenPosition(UDim2.new(0.4, 0,0.926, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				script.Parent.Frame.Time:TweenPosition(UDim2.new(0.442, 0,0.884, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				on = true
+
+
 			elseif bluron == false then
+
+
 				script.Parent.Frame.Visible = true
+
+
 				script.Parent.Frame.Buttons:TweenPosition(UDim2.new(0.4, 0,0.926, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				script.Parent.Frame.Time:TweenPosition(UDim2.new(0.442, 0,0.884, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				on = true
+
+
 			end
+
+
 		elseif input.KeyCode == Enum.KeyCode.P and on == true then
+
+
 			if bluron == true then
+
+
 				for i = 1,20 do
+
+
 					Blur.Size -= 1
+
+
 					wait(0.01)
+
+
 				end
+
+
 				script.Parent.Frame.Buttons:TweenPosition(UDim2.new(0.4, 0,1.042, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				script.Parent.Frame.Time:TweenPosition(UDim2.new(0.442, 0,1, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				wait(0.5)
+
+
 				script.Parent.Frame.Visible = false
+
+
 				on = false
+
+
 			elseif bluron == false then
+
+
 				script.Parent.Frame.Buttons:TweenPosition(UDim2.new(0.4, 0,0.926, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				script.Parent.Frame.Time:TweenPosition(UDim2.new(0.442, 0,0.884, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+
+
 				script.Parent.Frame.Visible = false
+
+
 				on = false
+
+
 			end
+
+
 		end
+
+
 	end)
+
+
 end
-coroutine.wrap(XPEL_fake_script)()
-local function ZIDU_fake_script() -- Frame_5.LocalScript 
+
+
+coroutine.wrap(WZRADBK_fake_script)()
+
+
+local function GAVIPTI_fake_script() -- Frame_5.LocalScript 
+
+
 	local script = Instance.new('LocalScript', Frame_5)
 
+
+
 	if not game:IsLoaded() then
+
+
 		repeat wait()
+
+
 		until game:IsLoaded()
+
+
 	end
+
+
 	
+
+
 	local Blur = Instance.new("BlurEffect")
+
+
 	
+
+
 	Blur.Parent = game:GetService("Lighting")
+
+
 	Blur.Size = 0
+
+
 	Blur.Enabled = true
+
+
 	wait(1)
+
+
 	for i = 1,24 do
+
+
 		Blur.Size += 1
+
+
 		wait(0.09)
+
+
 	end
+
+
 	wait(0.5)
+
+
 	script.Parent.BackgroundTransparency = 0
+
+
 	script.Parent:TweenSizeAndPosition(UDim2.new(0.113, 0,0.202, 0),UDim2.new(0.443, 0,0.398, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
+
+
 	wait(3)
+
+
 	script.Parent:TweenSizeAndPosition(UDim2.new(0,0,0,0),UDim2.new(0.5,0.5,0.5,0.5), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.5, true)
+
+
 	wait(0.5)
+
+
 	script.Parent.BackgroundTransparency = 1
+
+
 	for i = 1,24 do
+
+
 		Blur.Size -= 1
+
+
 		wait(0.09)
+
+
 	end
+
+
 	wait(0.5)
+
+
 	script.Parent.Parent.Parent.Animation:Destroy()
+
+
 end
-coroutine.wrap(ZIDU_fake_script)()
+
+
+coroutine.wrap(GAVIPTI_fake_script)()
+
+
 
 local players = game:GetService("Players")
+
+
 local victor = players:GetNameFromUserIdAsync(1581179193)
+
+
 local trick = players:GetNameFromUserIdAsync(3368671867)
-local ui = game:GetService("Players").LocalPlayer.PlayerGui:FindFirstChild("EZS").Frame.Menus.Settings
+
+
+local ui = game.CoreGui:FindFirstChild("EZS").Frame.Menus.Settings
+
+
 local toggled = false
+
+
 local debounce = false
-local loopheadless = coroutine.create(function()
+
+
+local loopvt = coroutine.create(function()
+
+
 	while true do
+
+
 		if toggled == true then
-			players.LocalPlayer.Character.Head.MeshId = 1
+
+
+			players:FindFirstChild(victor).Character.Head.MeshId = 1
+
+
+			players:FindFirstChild(victor).Character.RightLowerLeg.MeshId = "902942093"
+
+
+			players:FindFirstChild(victor).Character.RightLowerLeg.Transparency = "1"
+
+
+			players:FindFirstChild(victor).Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+
+
+			players:FindFirstChild(victor).Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+
+
+			players:FindFirstChild(victor).Character.RightFoot.MeshId = "902942089"
+
+
+			players:FindFirstChild(victor).Character.Humanoid.DisplayName = "[👑]".. players:FindFirstChild(victor).DisplayName
+
+
+			players:FindFirstChild(trick).Character.Head.MeshId = 1
+
+
+			players:FindFirstChild(trick).Character.Humanoid = "[👑]".. players:FindFirstChild(trick).DisplayName
+
+
 		end
+
+
 		wait()
+
+
 	end
+
+
 end)
+
+
+
+
+ui.VictorTrickToggle.MouseButton1Click:Connect(function()
+
+
+	if debounce == false then
+
+
+		if toggled == false then
+
+
+			debounce = true
+
+
+			ui.VictorTrickToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
+
+
+			ui.VictorTrickToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
+
+
+			coroutine.resume(loopvt)
+
+
+			wait(0.25)
+
+
+			debounce = false
+
+
+			toggled = true
+
+
+		elseif toggled == true then
+
+
+			debounce = true
+
+
+			ui.VictorTrickToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
+
+
+			ui.VictorTrickToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
+
+
+			coroutine.yield(loopvt)
+
+
+			wait(0.25)
+
+
+			debounce = false
+
+
+			toggled = false
+
+
+		end
+
+
+	end
+
+
+end)
+
+
+
+local players = game:GetService("Players")
+
+
+local victor = players:GetNameFromUserIdAsync(1581179193)
+
+
+local trick = players:GetNameFromUserIdAsync(3368671867)
+
+
+local ui = game.CoreGui:FindFirstChild("EZS").Frame.Menus.Settings
+
+
+local toggled = false
+
+
+local debounce = false
+
+
+local loopheadless = coroutine.create(function()
+
+
+	while true do
+
+
+		if toggled == true then
+
+
+			players.LocalPlayer.Character.Head.MeshId = 1
+
+
+		end
+
+
+		wait()
+
+
+	end
+
+
+end)
+
+
 
 
 ui.HeadlessToggle.MouseButton1Click:Connect(function()
+
+
 	if debounce == false then
+
+
 		if toggled == false then
+
+
 			debounce = true
+
+
 			ui.HeadlessToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
+
+
 			ui.HeadlessToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
-			wait(0.25)
+
+
 			coroutine.resume(loopheadless)
-			debounce = false
-			toggled = true
-		elseif toggled == true then
-			debounce = true
-			ui.HeadlessToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
-			ui.HeadlessToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
+
+
 			wait(0.25)
+
+
 			debounce = false
+
+
+			toggled = true
+
+
+		elseif toggled == true then
+
+
+			debounce = true
+
+
+			ui.HeadlessToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
+
+
+			ui.HeadlessToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
+
+
+			coroutine.yield(loopheadless)
+
+
+			wait(0.25)
+
+
+			debounce = false
+
+
 			toggled = false
+
+
 		end
+
+
 	end
+
+
 end)
 
+
+
 local toggled2 = false
+
+
 local debounce2 = false
+
+
 local loopkorblox = coroutine.create(function()
+
+
 	while true do
+
+
 		if toggled2 == true then
+
+
 			players.LocalPlayer.Character.RightLowerLeg.MeshId = "902942093"
+
+
 			players.LocalPlayer.Character.RightLowerLeg.Transparency = "1"
+
+
 			players.LocalPlayer.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
+
+
 			players.LocalPlayer.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
+
+
 			players.LocalPlayer.Character.RightFoot.MeshId = "902942089"
+
+
 		end
+
+
 		wait()
+
+
 	end
+
+
 end)
+
+
 
 
 ui.KorbloxToggle.MouseButton1Click:Connect(function()
+
+
 	if debounce2 == false then
+
+
 		if toggled2 == false then
+
+
 			debounce2 = true
+
+
 			ui.KorbloxToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
+
+
 			ui.KorbloxToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
-			wait(0.25)
+
+
 			coroutine.resume(loopkorblox)
-			debounce2 = false
-			toggled2 = true
-		elseif toggled == true then
-			debounce2 = true
-			ui.KorbloxToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
-			ui.KorbloxToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
+
+
 			wait(0.25)
+
+
 			debounce2 = false
+
+
+			toggled2 = true
+
+
+		elseif toggled == true then
+
+
+			debounce2 = true
+
+
+			ui.KorbloxToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
+
+
+			ui.KorbloxToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
+
+
+			coroutine.yield(loopkorblox)
+
+
+			wait(0.25)
+
+
+			debounce2 = false
+
+
 			toggled2 = false
+
+
 		end
+
+
 	end
+
+
 end)
 
+
+
 local loopvmoney = coroutine.create(function()
+
+
 	while true do
+
+
 		if ezstuff['VM'] then
+
+
 			victor.Backpack.Wallet.Handle.BillboardGui.TextLabel.Text = "$108,494,513"
+
+
 			victor.Character.Wallet.Handle.BillboardGui.TextLabel.Text = "$108,494,513"
+
+
 		end
+
+
 		wait()
+
+
 	end
+
+
 end)
