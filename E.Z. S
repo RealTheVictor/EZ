@@ -3603,15 +3603,6 @@ local function WZRADBK_fake_script() -- EZS.LocalScript
 	local on = false
 
 
-	local Blur = game:GetService("Lighting"):WaitForChild("Blur")
-
-
-	
-
-
-	Blur.Size = 0
-
-
 	
 
 
@@ -3624,16 +3615,6 @@ local function WZRADBK_fake_script() -- EZS.LocalScript
 			if bluron == true then
 
 
-				for i = 1,20 do
-
-
-					Blur.Size += 1
-
-
-					wait(0.01)
-
-
-				end
 
 
 				script.Parent.Frame.Visible = true
@@ -3671,17 +3652,6 @@ local function WZRADBK_fake_script() -- EZS.LocalScript
 
 			if bluron == true then
 
-
-				for i = 1,20 do
-
-
-					Blur.Size -= 1
-
-
-					wait(0.01)
-
-
-				end
 
 
 				script.Parent.Frame.Buttons:TweenPosition(UDim2.new(0.4, 0,1.042, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.5, true)
@@ -3815,8 +3785,8 @@ local function GAVIPTI_fake_script() -- Frame_5.LocalScript
 
 
 	wait(0.5)
-
-
+	game:GetService("Lightning").Blur:Destroy()
+	
 	script.Parent.Parent.Parent.Animation:Destroy()
 
 
