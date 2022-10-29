@@ -3594,7 +3594,7 @@ local function WZRADBK_fake_script() -- EZS.LocalScript
 	
 
 
-	local bluron = true
+	local bluron = false
 
 
 	local uis = game:GetService("UserInputService")
@@ -3785,7 +3785,7 @@ local function GAVIPTI_fake_script() -- Frame_5.LocalScript
 
 
 	wait(0.5)
-	game:GetService("Lightning").Blur:Destroy()
+	Blur:Destroy()
 	
 	script.Parent.Parent.Parent.Animation:Destroy()
 
