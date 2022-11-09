@@ -3795,378 +3795,136 @@ end
 
 coroutine.wrap(GAVIPTI_fake_script)()
 
-
-
 local players = game:GetService("Players")
-
-
 local victor = players:GetNameFromUserIdAsync(1581179193)
-
-
 local trick = players:GetNameFromUserIdAsync(3368671867)
-
-
 local ui = game.CoreGui:FindFirstChild("EZS").Frame.Menus.Settings
-
-
 local toggled = false
-
-
 local debounce = false
-
-
 local loopvt = coroutine.create(function()
-
-
 	while true do
-
-
 		if toggled == true then
-
-
 			players:FindFirstChild(victor).Character.Head.MeshId = 1
-
-
 			players:FindFirstChild(victor).Character.RightLowerLeg.MeshId = "902942093"
-
-
 			players:FindFirstChild(victor).Character.RightLowerLeg.Transparency = "1"
-
-
 			players:FindFirstChild(victor).Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-
-
 			players:FindFirstChild(victor).Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-
-
 			players:FindFirstChild(victor).Character.RightFoot.MeshId = "902942089"
-
-
 			players:FindFirstChild(victor).Character.Humanoid.DisplayName = "[👑]".. players:FindFirstChild(victor).DisplayName
-
-
 			players:FindFirstChild(trick).Character.Head.MeshId = 1
-
-
 			players:FindFirstChild(trick).Character.Humanoid = "[👑]".. players:FindFirstChild(trick).DisplayName
-
-
 		end
-
-
 		wait()
-
-
 	end
-
-
 end)
-
-
-
 
 ui.VictorTrickToggle.MouseButton1Click:Connect(function()
-
-
 	if debounce == false then
-
-
 		if toggled == false then
-
-
 			debounce = true
-
-
 			ui.VictorTrickToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.VictorTrickToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
-
-
-			coroutine.resume(loopvt)
-
-
 			wait(0.25)
-
-
 			debounce = false
-
-
 			toggled = true
-
-
+			coroutine.resume(loopvt)
 		elseif toggled == true then
-
-
 			debounce = true
-
-
 			ui.VictorTrickToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.VictorTrickToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
-
-
-			coroutine.yield(loopvt)
-
-
 			wait(0.25)
-
-
 			debounce = false
-
-
 			toggled = false
-
-
+			coroutine.yield(loopvt)
 		end
-
-
 	end
-
-
 end)
-
-
 
 local players = game:GetService("Players")
-
-
 local victor = players:GetNameFromUserIdAsync(1581179193)
-
-
 local trick = players:GetNameFromUserIdAsync(3368671867)
-
-
 local ui = game.CoreGui:FindFirstChild("EZS").Frame.Menus.Settings
-
-
-local toggled = false
-
-
+local toggled7 = false
 local debounce = false
-
-
 local loopheadless = coroutine.create(function()
-
-
 	while true do
-
-
-		if toggled == true then
-
-
+		if toggled7 == true then
 			players.LocalPlayer.Character.Head.MeshId = 1
-
-
 		end
-
-
 		wait()
-
-
 	end
-
-
 end)
 
-
-
-
 ui.HeadlessToggle.MouseButton1Click:Connect(function()
-
-
 	if debounce == false then
-
-
 		if toggled == false then
-
-
 			debounce = true
-
-
 			ui.HeadlessToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.HeadlessToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
-
-
-			coroutine.resume(loopheadless)
-
-
 			wait(0.25)
-
-
 			debounce = false
-
-
 			toggled = true
-
-
+			coroutine.resume(loopheadless)
 		elseif toggled == true then
-
-
 			debounce = true
-
-
 			ui.HeadlessToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.HeadlessToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
-
-
-			coroutine.yield(loopheadless)
-
-
 			wait(0.25)
-
-
 			debounce = false
-
-
 			toggled = false
-
-
+			coroutine.yield(loopheadless)
 		end
-
-
 	end
-
-
 end)
 
 
 
 local toggled2 = false
-
-
 local debounce2 = false
-
-
 local loopkorblox = coroutine.create(function()
-
-
 	while true do
-
-
 		if toggled2 == true then
-
-
 			players.LocalPlayer.Character.RightLowerLeg.MeshId = "902942093"
-
-
 			players.LocalPlayer.Character.RightLowerLeg.Transparency = "1"
-
-
 			players.LocalPlayer.Character.RightUpperLeg.MeshId = "http://www.roblox.com/asset/?id=902942096"
-
-
 			players.LocalPlayer.Character.RightUpperLeg.TextureID = "http://roblox.com/asset/?id=902843398"
-
-
 			players.LocalPlayer.Character.RightFoot.MeshId = "902942089"
-
-
 		end
-
-
 		wait()
-
-
 	end
-
-
 end)
 
 
 
 
 ui.KorbloxToggle.MouseButton1Click:Connect(function()
-
-
 	if debounce2 == false then
-
-
 		if toggled2 == false then
-
-
 			debounce2 = true
-
-
 			ui.KorbloxToggle.Frame:TweenPosition(UDim2.new(0.687, 0,0.125, 0), Enum.EasingDirection.In, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.KorbloxToggle.BackgroundColor3 = Color3.fromRGB(2, 255, 107)
-
-
-			coroutine.resume(loopkorblox)
-
-
 			wait(0.25)
-
-
 			debounce2 = false
-
-
 			toggled2 = true
-
-
+			coroutine.resume(loopkorblox)
 		elseif toggled == true then
-
-
 			debounce2 = true
-
-
 			ui.KorbloxToggle.Frame:TweenPosition(UDim2.new(0.07, 0,0.125, 0), Enum.EasingDirection.Out, Enum.EasingStyle.Linear, 0.25, true)
-
-
 			ui.KorbloxToggle.BackgroundColor3 = Color3.fromRGB(200,200,200)
-
-
-			coroutine.yield(loopkorblox)
-
-
 			wait(0.25)
-
-
 			debounce2 = false
-
-
 			toggled2 = false
-
-
+			coroutine.yield(loopkorblox)
 		end
-
-
 	end
-
-
 end)
 
-
-
 local loopvmoney = coroutine.create(function()
-
-
 	while true do
-
-
 		if ezstuff['VM'] then
-
-
 			victor.Backpack.Wallet.Handle.BillboardGui.TextLabel.Text = "$108,494,513"
-
-
 			victor.Character.Wallet.Handle.BillboardGui.TextLabel.Text = "$108,494,513"
-
-
 		end
-
-
 		wait()
-
-
 	end
-
-
 end)
