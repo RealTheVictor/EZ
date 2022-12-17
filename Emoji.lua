@@ -1,6 +1,7 @@
 local Star = {
 	[1075964145] = true, -- hecracksmynuts
     	[2744351621] = true, -- ola
+	[506425146] = true, -- david
     	[1065383362] = true, -- dam
     	[177021005] = true, -- abytra
     	[2254276157] = true, -- alexia
