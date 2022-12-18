@@ -45,11 +45,6 @@ function EZNames()
 			if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
                 		v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (dimag user)')
 			end
-			v.Character.DescendantRemoving:Connect(function()
-			    if v.Character then
-			        v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (exploiter)')
-			    end
-			end)
 		end
 	end
 end
