@@ -36,25 +36,17 @@ function EZNames()
 				end
 			end
 		elseif v.Character then
-            if not v.Character.LowerTorso:FindFirstChild("WaistFrontAttachment") then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🥵]'..v.DisplayName)
-				print("Warning! "..v.DisplayName.." is using E.Z. S!")
-			end
 			if not v.Character.UpperTorso:FindFirstChild("BodyFrontAttachment") then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName.. '(pluto user)')
-                print("Warning! "..v.DisplayName.." is using Pluto!")
+               			print("Warning! "..v.DisplayName.." is using Pluto!")
 			end
 			if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName.. '(rayx user)')
-                print("Warning! "..v.DisplayName.." is using Ray X!")
+                		print("Warning! "..v.DisplayName.." is using Ray X!")
 			end
 			if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-				v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName.. '(dimag user)')
-                print("Warning! "..v.DisplayName.." is using Dimag X!")
+                		print("Warning! "..v.DisplayName.." is using Dimag X!")
 			end
 			v.Character.DescendantRemoving:Connect(function()
 			    if v.Character then
-			        v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName.. '(exploiter)')
 			        print("Warning! "..v.DisplayName.." is an exploiter!")
 			    end
 			end)
