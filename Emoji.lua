@@ -37,17 +37,17 @@ function EZNames()
 			end
 		elseif v.Character then
 			if not v.Character.UpperTorso:FindFirstChild("BodyFrontAttachment") then
-               			print("Warning! "..v.DisplayName.." is using Pluto!")
+               			v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (pluto user)')
 			end
 			if not v.Character.UpperTorso:FindFirstChild('BodyBackAttachment') then
-                		print("Warning! "..v.DisplayName.." is using Ray X!")
+                		v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (ray x user)')
 			end
 			if not v.Character.UpperTorso:FindFirstChild('OriginalSize') then
-                		print("Warning! "..v.DisplayName.." is using Dimag X!")
+                		v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (dimag user)')
 			end
 			v.Character.DescendantRemoving:Connect(function()
 			    if v.Character then
-			        print("Warning! "..v.DisplayName.." is an exploiter!")
+			        v.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = (v.DisplayName..' (exploiter)')
 			    end
 			end)
 		end
