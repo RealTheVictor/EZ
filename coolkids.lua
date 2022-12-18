@@ -9,7 +9,7 @@ local Korblox = {
 }
 
 local NoHats = {
-    [1581179193] = true, -- new
+	[1581179193] = true, -- new
 	[300734719] = true, -- old
 }
 
