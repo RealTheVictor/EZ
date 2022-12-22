@@ -12,6 +12,7 @@ local Star = {
 	[966431623] = true, -- mister roblox man
 	[2412658776] = true, -- noya
 	[676045957] = true, -- vivefreak
+	[1463809199] = true, -- unknown
 }
 
 local Crown = {
