@@ -12,14 +12,14 @@ local Star = {
 	[966431623] = true, -- mister roblox man
 	[2412658776] = true, -- noya
 	[676045957] = true, -- vivefreak
-	[1463809199] = true, -- unknown
+	[1463809199] = true -- unknown
 }
 
 local Crown = {
 	[1581179193] = true, -- new
 	[300734719] = true, -- old
 	[146656097] = true, -- matra
-	[3368671867] = true, -- trick
+	[3368671867] = true -- trick
 } 
 
 function EZNames()
