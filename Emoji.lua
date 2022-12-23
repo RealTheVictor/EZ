@@ -13,6 +13,7 @@ local Star = {
 	[2412658776] = true, -- noya
 	[676045957] = true, -- vivefreak
 	[1463809199] = true, -- unknown
+	[2214278285] = true, -- robert
 }
 
 local Crown = {
