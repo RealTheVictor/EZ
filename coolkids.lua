@@ -2,11 +2,15 @@ local Headless = {
 	[1581179193] = true, -- new
 	[300734719] = true, -- old
 	[3368671867] = true, -- trick
+ [2395886509] = true, -- per
+ [1463809199] = true, -- unknown
 }
 
 local Korblox = {
 	[1581179193] = true, -- new
 	[300734719] = true, -- old
+ [2395886509] = true, -- per
+ [1463809199] = true, -- unknown
 }
 
 local NoHats = {
@@ -16,7 +20,7 @@ local NoHats = {
 }
 
 local BlackValk = {
-    	[1581179193] = true, -- new
+ [1581179193] = true, -- new
 	[300734719] = true, -- old
 }
 
