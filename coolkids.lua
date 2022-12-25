@@ -17,14 +17,14 @@ local Korblox = {
 
 local NoHats = {
 --	[1581179193] = true, -- new
-	[300734719] = true, -- old
+--	[300734719] = true, -- old
 	[3368671867] = true, -- trick
 	[2214278285] = true, -- robert
 }
 
 local BlackValk = {
- 	[1581179193] = true, -- new
-	[300734719] = true, -- old
+-- 	[1581179193] = true, -- new
+--	[300734719] = true, -- old
 }
 
 for _,v in pairs(game:GetService("Players"):GetChildren()) do
