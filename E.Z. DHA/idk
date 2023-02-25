@@ -1,40 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 pcall(function()
 local espcolor = Color3.fromRGB(140, 69, 102)
 local wallhack_esp_transparency = .4
@@ -42,7 +5,7 @@ local gui_hide_button = {Enum.KeyCode.LeftControl, "h"}
 local plrs = game:GetService("Players")
 local lplr = game:GetService("Players").LocalPlayer
 local TeamBased = false ; local teambasedswitch = "o"
-local presskeytoaim = true; local aimkey = "v"
+local presskeytoaim = true;
 aimbothider = false; aimbothiderspeed = .5
 local Aim_Assist = false ; Aim_Assist_Key = {Enum.KeyCode.LeftControl, "z"}
 local espupdatetime = 5; autoesp = false; local charmsesp = true
