@@ -1,0 +1,230 @@
+if not game:IsLoaded() then
+    repeat wait()
+    until game:IsLoaded()
+end
+
+loadstring(game:HttpGet('https://raw.githubusercontent.com/RealTheVictor/EZ/main/E.Z.%20DHA/uilib'))()
+
+local reps = game:GetService("ReplicatedStorage")
+local idk = reps.Catalog.Body.LeftLegs.UnU
+
+-- [Main Tab] -----------------------------------------------------------------------------------------------------------------------------------------------------
+local MainTab = library:AddTab("Main");
+local MainColumn1 = MainTab:AddColumn();
+local Avatar = MainColumn1:AddSection("Avatar")
+local Extra = MainColumn1:AddSection("Extra")
+
+Avatar:AddButton({text = "Headless", callback = function()
+    idk:FireServer("wear", 134082579)
+end});
+Avatar:AddButton({text = "Korblox", callback = function()
+    idk:FireServer("wear", 139607718)
+end});
+Avatar:AddButton({text = "Headless & Korblox", callback = function()
+    idk:FireServer("wear", 134082579)
+    idk:FireServer("wear", 139607718)
+end});
+Avatar:AddButton({text = "Trick's Purple Hat", callback = function()
+    idk:FireServer("wear", 47697285)
+end});
+Avatar:AddDivider("(Take off accessories)")
+Avatar:AddButton({text = "Become Trick", callback = function()
+    idk:FireServer("wear", 47697285)
+    idk:FireServer("wear", 7262883976)
+    idk:FireServer("wear", 11026529354)
+    idk:FireServer("wear", 2510235063)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+    idk:FireServer("skintone", "Really black")
+end});
+
+local aimkey = "e"
+Extra:AddButton({text = "FPS Gui", callback = function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/RealTheVictor/EZ/main/E.Z.%20DHA/idk'))()
+end});
+
+Extra:AddDivider("FPS Gui Keybinds")
+
+Extra:AddButton({text = "Set FPS Gui key to E", callback = function()
+    aimkey = "e"
+end});
+
+Extra:AddButton({text = "Set FPS Gui key to V", callback = function()
+    aimkey = "e"
+end});
+
+local MainColumn2 = MainTab:AddColumn()
+local Scaling = MainColumn2:AddSection("Scaling")
+
+Scaling:AddSlider({text = "Body Height Scale", min = 0, max = 1000, value = 100, callback = function(size)
+    idk:FireServer("scale","BodyHeightScale",size)
+end});
+
+Scaling:AddSlider({text = "Body Width Scale", min = 0, max = 1000, value = 50, callback = function(size)
+    idk:FireServer("scale","BodyWidthScale",size)
+end});
+
+Scaling:AddSlider({text = "Head Scale", min = 0, max = 1000, value = 100, callback = function(size)
+    idk:FireServer("scale","HeadScale",size)
+end});
+
+-- [Animations Tab] -----------------------------------------------------------------------------------------------------------------------------------------------------
+local AnimsTab = library:AddTab("Animations");
+local AnimsColumn = AnimsTab:AddColumn();
+local DHSection = AnimsColumn:AddSection("Da Hoodian Animations");
+
+DHSection:AddButton({text = "Da Hoodian #1", callback = function()
+    idk:FireServer("wear", 2510235063)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #2", callback = function()
+    idk:FireServer("wear", 2510235063)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 1113752285)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #3", callback = function()
+    idk:FireServer("wear", 973771666)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #4", callback = function()
+    idk:FireServer("wear", 973771666)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 1113752285)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #5", callback = function()
+    idk:FireServer("wear", 619528125)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #6", callback = function()
+    idk:FireServer("wear", 619528125)
+    idk:FireServer("wear", 619537468)
+    idk:FireServer("wear", 619536621)
+    idk:FireServer("wear", 1113752285)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection:AddButton({text = "Da Hoodian #7", callback = function()
+    idk:FireServer("wear", 619528125)
+    idk:FireServer("wear", 754636298)
+    idk:FireServer("wear", 754635032)
+    idk:FireServer("wear", 1113752285)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+local AnimsColumn2 = AnimsTab:AddColumn();
+local DHSection2 = AnimsColumn2:AddSection("Most Girl Animations");
+
+DHSection2:AddButton({text = "Pick me #1 (probably)", callback = function()
+    idk:FireServer("wear", 2510235063)
+    idk:FireServer("wear", 2510242378)
+    idk:FireServer("wear", 2510238627)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection2:AddButton({text = "Pick me #2 (probably)", callback = function()
+    idk:FireServer("wear", 619528125)
+    idk:FireServer("wear", 2510242378)
+    idk:FireServer("wear", 2510238627)
+    idk:FireServer("wear", 658832070)
+    idk:FireServer("wear", 754636589)
+    idk:FireServer("wear", 5319931619)
+end});
+
+DHSection2:AddButton({text = "Barbie", callback = function()
+    idk:FireServer("wear", 1018553897)
+    idk:FireServer("wear", 1018549681)
+    idk:FireServer("wear", 1018548665)
+    idk:FireServer("wear", 1018553240)
+    idk:FireServer("wear", 1018552770)
+    idk:FireServer("wear", 5319931619)
+end});
+
+-- [Settings Tab] -----------------------------------------------------------------------------------------------------------------------------------------------------
+local SettingsTab = library:AddTab("Settings"); 
+local SettingsColumn = SettingsTab:AddColumn(); 
+local SettingsColumn2 = SettingsTab:AddColumn(); 
+local SettingSection = SettingsColumn:AddSection("Menu"); 
+
+SettingSection:AddBind({text = "Open / Close", flag = "UI Toggle", nomouse = true, key = "P", callback = function()
+    library:Close();
+end});
+
+SettingSection:AddColor({text = "Accent Color", flag = "Menu Accent Color", color = Color3.new(0.599623620510101318359375, 0.447115242481231689453125, 0.97174417972564697265625), callback = function(color)
+    if library.currentTab then
+        library.currentTab.button.TextColor3 = color;
+    end
+    for i,v in pairs(library.theme) do
+        v[(v.ClassName == "TextLabel" and "TextColor3") or (v.ClassName == "ImageLabel" and "ImageColor3") or "BackgroundColor3"] = color;
+    end
+end});
+
+-- [Background List]
+local backgroundlist = {
+    Floral = "rbxassetid://5553946656",
+    Flowers = "rbxassetid://6071575925",
+    Circles = "rbxassetid://6071579801",
+    Hearts = "rbxassetid://6073763717"
+};
+
+-- [Background List]
+local back = SettingSection:AddList({text = "Background", max = 4, flag = "background", values = {"Floral", "Flowers", "Circles", "Hearts"}, value = "Floral", callback = function(v)
+    if library.main then
+        library.main.Image = backgroundlist[v];
+    end
+end});
+
+-- [Background Color Picker]
+back:AddColor({flag = "backgroundcolor", color = Color3.new(), callback = function(color)
+    if library.main then
+        library.main.ImageColor3 = color;
+    end
+end, trans = 1, calltrans = function(trans)
+    if library.main then
+        library.main.ImageTransparency = 1 - trans;
+    end
+end});
+
+-- [Tile Size Slider]
+SettingSection:AddSlider({text = "Tile Size", min = 50, max = 500, value = 50, callback = function(size)
+    if library.main then
+        library.main.TileSize = UDim2.new(0, size, 0, size);
+    end
+end});
+
+SettingSection:AddButton({text = "Self Destruct", callback = function()
+    library:Unload()
+end});
+
+-- [Init] --------------------------------------------------------------------------------------------------------------------------------------------------------------------
+library:Init();
+library:selectTab(library.tabs[1]);
